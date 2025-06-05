@@ -9,8 +9,9 @@ export default createGlobalStyle`
 
   body {
     margin: 0;
+    padding: 0;
     font-family: system-ui;
-    background-color: #07121A;
-    color: #FFFFFFFF;
+    background-color: ${({ theme }) => theme.surface.neutralAlt};
+    color: ${({ theme }) => theme.text.neutral};
   }
 `;
