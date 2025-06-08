@@ -1,78 +1,26 @@
-// styles/Typography.js
 import styled from "styled-components";
 
-let fontFamily = "Inter, sans-serif";
+const createTextComponent = (Tag, styleKey) => styled(Tag)`
+  font-size: ${({ theme }) => theme.typography[styleKey].size};
+  font-family: ${({ theme }) => theme.typography[styleKey].fontFamily};
+  font-weight: ${({ theme }) => theme.typography[styleKey].weight};
+  color: ${({ color }) => color || "inherit"};
+`;
 
 // Headings
-export const H1 = styled.h1`
-  font-size: ${({ theme }) => theme.typography.heading1.size};
-  font-family: ${fontFamily};
-  font-weight: ${({ theme }) => theme.typography.heading1.weight};
-  color: ${({ color }) => color || "inherit"};
-`;
+export const H1 = createTextComponent("h1", "heading1");
+export const H2 = createTextComponent("h2", "heading2");
+export const H3 = createTextComponent("h3", "heading3");
 
-export const H2 = styled.h2`
-  font-size: ${({ theme }) => theme.typography.heading2.size};
-  font-family: ${fontFamily};
-  font-weight: ${({ theme }) => theme.typography.heading2.weight};
-  color: ${({ color }) => color || "inherit"};
-`;
-
-export const H3 = styled.h3`
-  font-size: ${({ theme }) => theme.typography.heading3.size};
-  font-family: ${fontFamily};
-  font-weight: ${({ theme }) => theme.typography.heading3.weight};
-  color: ${({ color }) => color || "inherit"};
-`;
-
-// Body Text
-export const BB = styled.p`
-  font-size: ${({ theme }) => theme.typography.bodyBase.size};
-  font-family: ${fontFamily};
-  font-weight: ${({ theme }) => theme.typography.bodyBase.weight};
-  color: ${({ color }) => color || "inherit"};
-`;
-
-export const BS = styled.p`
-  font-size: ${({ theme }) => theme.typography.bodySmall.size};
-  font-family: ${fontFamily};
-  font-weight: ${({ theme }) => theme.typography.bodySmall.weight};
-  color: ${({ color }) => color || "inherit"};
-`;
+// Body
+export const BB = createTextComponent("p", "bodyBase");
+export const BS = createTextComponent("p", "bodySmall");
 
 // Labels
-export const LL = styled.span`
-  font-size: ${({ theme }) => theme.typography.labelLarge.size};
-  font-family: ${fontFamily};
-  font-weight: ${({ theme }) => theme.typography.labelLarge.weight};
-  color: ${({ color }) => color || "inherit"};
-`;
-
-export const LabelMedium = styled.span`
-  font-size: ${({ theme }) => theme.typography.labelMedium.size};
-  font-family: ${fontFamily};
-  font-weight: ${({ theme }) => theme.typography.labelMedium.weight};
-  color: ${({ color }) => color || "inherit"};
-`;
-
-export const LS = styled.span`
-  font-size: ${({ theme }) => theme.typography.labelSmall.size};
-  font-family: ${fontFamily};
-  font-weight: ${({ theme }) => theme.typography.labelSmall.weight};
-  color: ${({ color }) => color || "inherit"};
-`;
-
-export const LXS = styled.span`
-  font-size: ${({ theme }) => theme.typography.labelTiny.size};
-  font-family: ${fontFamily};
-  font-weight: ${({ theme }) => theme.typography.labelTiny.weight};
-  color: ${({ color }) => color || "inherit"};
-`;
+export const LL = createTextComponent("span", "labelLarge");
+export const LM = createTextComponent("span", "labelMedium");
+export const LS = createTextComponent("span", "labelSmall");
+export const LXS = createTextComponent("span", "labelTiny");
 
 // Caption
-export const C = styled.span`
-  font-size: ${({ theme }) => theme.typography.labelTiny.size};
-  font-family: ${fontFamily};
-  font-weight: ${({ theme }) => theme.typography.labelTiny.weight};
-  color: ${({ color }) => color || "inherit"};
-`;
+export const C = createTextComponent("span", "caption");
