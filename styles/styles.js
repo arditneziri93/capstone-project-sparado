@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import "./fonts";
 
 export default createGlobalStyle`
   *,
@@ -10,23 +11,18 @@ export default createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    font-family: system-ui;
+    font-family: ${({ theme }) => theme.typography.bodyBase.fontFamily};
     background-color: ${({ theme }) => theme.surface.neutralAlt};
     color: ${({ theme }) => theme.text.neutral};
   }
 
-  a{
+  a {
     text-decoration: none;
     color: inherit;
   }
 
-  a:hover{
-    text-decoration: none;
-    color: inherit;
-  }
-
-
-  a:active{
+  a:hover,
+  a:active {
     text-decoration: none;
     color: inherit;
   }

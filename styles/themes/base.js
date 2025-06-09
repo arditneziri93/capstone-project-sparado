@@ -78,45 +78,54 @@ const baseTheme = {
   typography: {
     heading1: {
       size: "32px",
+      fontFamily: `'Poppins', sans-serif`,
       weight: "700",
     },
     heading2: {
       size: "24px",
+      fontFamily: `'Poppins', sans-serif`,
       weight: "600",
     },
     heading3: {
       size: "20px",
+      fontFamily: `'Poppins', sans-serif`,
       weight: "600",
     },
     bodyBase: {
       size: "16px",
+      fontFamily: `'Poppins', sans-serif`,
       weight: "400",
     },
     bodySmall: {
       size: "14px",
+      fontFamily: `'Poppins', sans-serif`,
       weight: "400",
     },
     labelLarge: {
       size: "16px",
-      weight: "600",
+      fontFamily: `'Poppins', sans-serif`,
+      weight: "500",
     },
     labelMedium: {
       size: "14px",
-      weight: "600",
+      fontFamily: `'Poppins', sans-serif`,
+      weight: "500",
     },
     labelSmall: {
       size: "12px",
-      weight: "600",
+      fontFamily: `'Poppins', sans-serif`,
+      weight: "500",
     },
     labelTiny: {
       size: "8px",
-      weight: "600",
+      fontFamily: `'Poppins', sans-serif`,
+      weight: "500",
     },
     caption: {
       size: "12px",
+      fontFamily: `'Poppins', sans-serif`,
       weight: "400",
     },
-    fontFamily: `'Inter', sans-serif`,
   },
 };
 
