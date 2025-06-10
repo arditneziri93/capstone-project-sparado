@@ -1,7 +1,12 @@
-export default function HomePage() {
-  return (
-    <div>
-      <h1>Hello from Next.js</h1>
-    </div>
-  );
+export async function getServerSideProps() {
+  return {
+    redirect: {
+      destination: "/dashboard",
+      permanent: true,
+    },
+  };
+}
+
+export default function Home() {
+  return null;
 }
