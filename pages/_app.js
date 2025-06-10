@@ -5,9 +5,10 @@ import dark from "../styles/themes/dark";
 import AppLayout from "../components/layout/app_layout";
 
 export default function App({ Component, pageProps }) {
+  const darkModeEnabled = false;
   return (
     <>
-      <ThemeProvider theme={light}>
+      <ThemeProvider theme={darkModeEnabled ? dark : light}>
         <AppLayout>
           <GlobalStyle />
           <Component {...pageProps} />
