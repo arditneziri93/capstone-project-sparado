@@ -69,11 +69,13 @@ const baseTheme = {
     },
   },
   icons: {
-    xs: "8px",
-    s: "12px",
-    m: "18px",
+    xxs: "10px",
+    xs: "12px",
+    s: "16px",
+    m: "20px",
     l: "24px",
     xl: "32px",
+    xxl: "48px",
   },
   typography: {
     heading1: {
