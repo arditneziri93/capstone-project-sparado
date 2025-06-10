@@ -38,7 +38,9 @@ export default function Breadcrumbs() {
 
   const breadcrumbs = pathSegments.map((segment, index) => {
     const href = "/" + pathSegments.slice(0, index + 1).join("/");
-    const label = decodeURIComponent(segment).replace(/-/g, " ");
+    const label = decodeURIComponent(segment)
+      .replace(/-/g, " ")
+      .replace(/\b\w/g, (c) => c.toUpperCase());
     return { href, label };
   });
 
