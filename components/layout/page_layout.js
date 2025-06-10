@@ -3,20 +3,22 @@ import Breadcrumbs from "../breadcrumbs";
 import { C } from "../typography";
 
 const OuterWrapper = styled.div`
-  min-height: 98vh;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
 `;
 
 const LayoutWrapper = styled.div`
+  min-width: 800px;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  padding: ${({ theme }) => theme.size.l};
+  padding: ${({ theme }) => theme.size.xl2};
+  padding-bottom: 0;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  gap: ${({ theme }) => theme.size.l};
+  gap: ${({ theme }) => theme.size.m};
 `;
 
 const Main = styled.main`
@@ -24,6 +26,9 @@ const Main = styled.main`
 `;
 
 const Footer = styled.footer`
+  min-width: 800px;
+  max-width: 1200px;
+  width: 100%;
   text-align: center;
   padding: ${({ theme }) => theme.size.m};
   color: ${({ theme }) => theme.text.disabled};
@@ -40,12 +45,11 @@ export default function PageLayout({ title, breadcrumbs = [], children }) {
         <h1>{title}</h1>
 
         <Main>{children}</Main>
+        <Footer>
+          {" "}
+          <C>© 2025 OKTAPOD Software Solutions. All rights reserved.</C>
+        </Footer>
       </LayoutWrapper>
-
-      <Footer>
-        {" "}
-        <C>© 2025 OKTAPOD Software Solutions. All rights reserved.</C>
-      </Footer>
     </OuterWrapper>
   );
 }
