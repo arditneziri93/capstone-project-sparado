@@ -1,0 +1,74 @@
+import styled from "styled-components";
+import ConditionalLink from "../conditional_link";
+import SidebarItem from "./_sidebar_item";
+import { IconComponent, IconType } from "../icons";
+
+const SidebarArea = styled.div`
+  width: ${({ theme }) => theme.size.xl8};
+  padding-top: ${({ theme }) => theme.size.xl};
+  padding-left: ${({ theme }) => theme.size.l};
+  padding-right: ${({ theme }) => theme.size.l};
+  padding-bottom: ${({ theme }) => theme.size.xl};
+  background-color: ${({ theme }) => theme.surface.neutral};
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+`;
+
+const SideBarContent = styled.div`
+  gap: ${({ theme }) => theme.size.xl2};
+  display: flex;
+  flex-direction: column;
+`;
+
+const Logo = styled.img`
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+`;
+
+const Ul = styled.ul`
+  list-style: none;
+  gap: ${({ theme }) => theme.size.m};
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+`;
+
+export default function Sidebar() {
+  return (
+    <SidebarArea>
+      <SideBarContent>
+        <ConditionalLink href="/">
+          <Logo src="/images/logo.svg" alt="Logo" />
+        </ConditionalLink>
+        <nav aria-label="Sidebar navigation">
+          <Ul>
+            <SidebarItem
+              label="Dashboard"
+              icon={IconType.HOME}
+              href="/dashboard"
+            />
+            <SidebarItem
+              label="Transactions"
+              icon={IconType.TRANSACTIONS}
+              href="/transactions"
+            />
+            <SidebarItem
+              label="Categories"
+              icon={IconType.CATEGORIES}
+              href="/categories"
+            />
+            <SidebarItem
+              label="Settings"
+              icon={IconType.SETTINGS}
+              href="/settings"
+            />
+          </Ul>
+        </nav>
+      </SideBarContent>
+    </SidebarArea>
+  );
+}
