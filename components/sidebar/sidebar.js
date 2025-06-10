@@ -48,7 +48,7 @@ export default function Sidebar() {
           <Ul>
             <SidebarItem
               label="Dashboard"
-              icon={IconType.HOME}
+              icon={IconType.DASHBOARD}
               href="/dashboard"
             />
             <SidebarItem
