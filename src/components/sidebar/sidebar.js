@@ -3,6 +3,7 @@ import ConditionalLink from "../conditional_link";
 import SidebarItem from "./_sidebar_item";
 import { IconType } from "../icons";
 import ThemeSwitch from "./_theme_switch";
+import { useThemeStore } from "@/src/stores/theme_store";
 
 const SidebarArea = styled.div`
   width: ${({ theme }) => theme.size.xl8};
@@ -36,11 +37,12 @@ const Ul = styled.ul`
   gap: ${({ theme }) => theme.size.m};
   display: flex;
   flex-direction: column;
-
   padding: 0;
 `;
 
 export default function Sidebar() {
+  const { isDarkMode, setDarkMode } = useThemeStore();
+
   return (
     <SidebarArea>
       <SideBarNavWrapper>
@@ -72,7 +74,10 @@ export default function Sidebar() {
           </Ul>
         </nav>
       </SideBarNavWrapper>
-      <ThemeSwitch defaultChecked={false} />
+      <ThemeSwitch
+        isDarkMode={isDarkMode}
+        onToggle={(value) => setDarkMode(value)}
+      />
     </SidebarArea>
   );
 }

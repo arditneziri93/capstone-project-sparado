@@ -2,7 +2,6 @@ import React from "react";
 import styled, { useTheme } from "styled-components";
 import { IconComponent, IconType, IconSize } from "../icons";
 import { hexToRgba } from "@/src/utils/hex_to_rgba";
-import { useThemeStore } from "@/src/stores/theme_store";
 
 const SwitchLabel = styled.label`
   position: relative;
@@ -16,7 +15,6 @@ const SwitchInput = styled.input`
   opacity: 0;
   width: 0;
   height: 0;
-  background-color: ${({ theme }) => theme.surface.neutralAlt};
 
   &:checked + span {
     background-color: ${({ theme }) => theme.surface.neutralAlt};
@@ -26,15 +24,20 @@ const SwitchInput = styled.input`
     box-shadow: 0 0 1px ${({ theme }) => theme.surface.neutralHover};
   }
 
+  & + span::before {
+    background-color: ${({ theme }) => theme.surface.neutral};
+  }
+
   &:checked + span::before {
     transform: translateX(${({ theme }) => theme.icons.xl});
+    background-color: ${({ theme }) => theme.surface.neutralHover};
   }
 `;
 
 const Slider = styled.span`
   position: absolute;
   inset: 0;
-  background-color: ${({ theme }) => theme.surface.neutralAlt};
+  background-color: ${({ theme }) => theme.surface.neutralSpecial};
   transition: 0.4s;
   border-radius: ${({ theme }) => theme.icons.xl};
   cursor: pointer;
@@ -46,7 +49,6 @@ const Slider = styled.span`
     width: ${({ theme }) => theme.icons.xl};
     top: ${({ theme }) => theme.size.s};
     left: ${({ theme }) => theme.size.s};
-    background-color: ${({ theme }) => theme.surface.accent};
     border-radius: 50%;
     transition: 0.4s;
   }
@@ -73,18 +75,16 @@ const IconWrapper = styled.span`
   justify-content: center;
 `;
 
-export default function ThemeSwitch() {
+export default function ThemeSwitch({ isDarkMode, onToggle }) {
   const theme = useTheme();
-  const [isDarkMode, setDarkMode] = React.useState(false);
 
   return (
     <SwitchLabel>
       <SwitchInput
         type="checkbox"
         checked={isDarkMode}
-        onClick={(e) => {
-          e.preventDefault();
-          setDarkMode(!isDarkMode);
+        onChange={(e) => {
+          onToggle(e.target.checked);
         }}
         readOnly
       />
