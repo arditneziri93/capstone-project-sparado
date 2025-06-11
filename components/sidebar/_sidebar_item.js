@@ -17,13 +17,13 @@ const Wrapper = styled.li`
   border-radius: ${({ theme }) => theme.size.ml};
 
   &:hover {
-    background-color: ${({ theme }) => theme.surface.neutralAlt};
+    background-color: ${({ theme }) => theme.surface.neutralHover};
     cursor: pointer;
     text-decoration: none !important;
   }
 
   &.sidebar-item--active {
-    background-color: ${({ theme }) => theme.surface.neutralAlt};
+    background-color: ${({ theme }) => theme.surface.neutralHover};
     text-decoration: none !important;
   }
 `;
