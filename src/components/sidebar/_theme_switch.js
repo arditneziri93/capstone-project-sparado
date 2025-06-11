@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled, { useTheme } from "styled-components";
 import { IconComponent, IconType, IconSize } from "../icons";
-import { hexToRgba } from "@/utils/hex_to_rgba";
+import { hexToRgba } from "@/src/utils/hex_to_rgba";
 
 const SwitchLabel = styled.label`
   position: relative;

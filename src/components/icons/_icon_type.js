@@ -1,4 +1,3 @@
-import Home from "@/pages";
 import {
   HomeTrendUp,
   Setting2,

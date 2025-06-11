@@ -1,11 +1,12 @@
+import GlobalStyle from "@/src/styles/styles";
+import light from "@/src/styles/themes/light";
+import dark from "@/src/styles/themes/dark";
+import AppLayout from "@/src/components/layout/app_layout";
 import { ThemeProvider } from "styled-components";
-import GlobalStyle from "../styles/styles";
-import light from "../styles/themes/light";
-import dark from "../styles/themes/dark";
-import AppLayout from "../components/layout/app_layout";
 
 export default function App({ Component, pageProps }) {
-  const darkModeEnabled = false;
+  const darkModeEnabled = true;
+  console.log("Theme loaded:", dark);
   return (
     <>
       <ThemeProvider theme={darkModeEnabled ? dark : light}>
