@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import styled, { useTheme } from "styled-components";
 import { IconComponent, IconType, IconSize } from "../icons";
 import { hexToRgba } from "@/src/utils/hex_to_rgba";
+import { useThemeStore } from "@/src/stores/theme_store";
 
 const SwitchLabel = styled.label`
   position: relative;
@@ -15,6 +16,7 @@ const SwitchInput = styled.input`
   opacity: 0;
   width: 0;
   height: 0;
+  background-color: ${({ theme }) => theme.surface.neutralAlt};
 
   &:checked + span {
     background-color: ${({ theme }) => theme.surface.neutralAlt};
@@ -44,7 +46,7 @@ const Slider = styled.span`
     width: ${({ theme }) => theme.icons.xl};
     top: ${({ theme }) => theme.size.s};
     left: ${({ theme }) => theme.size.s};
-    background-color: ${({ theme }) => theme.surface.neutralHover};
+    background-color: ${({ theme }) => theme.surface.accent};
     border-radius: 50%;
     transition: 0.4s;
   }
@@ -71,8 +73,9 @@ const IconWrapper = styled.span`
   justify-content: center;
 `;
 
-export default function ThemeSwitch({ isDarkMode, onChange }) {
+export default function ThemeSwitch() {
   const theme = useTheme();
+  const [isDarkMode, setDarkMode] = React.useState(false);
 
   return (
     <SwitchLabel>
@@ -81,7 +84,7 @@ export default function ThemeSwitch({ isDarkMode, onChange }) {
         checked={isDarkMode}
         onClick={(e) => {
           e.preventDefault();
-          onChange?.();
+          setDarkMode(!isDarkMode);
         }}
         readOnly
       />
