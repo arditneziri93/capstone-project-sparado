@@ -1,15 +1,16 @@
 import { create } from "zustand";
-import { getTheme, saveTheme } from "@/services/themeService";
+import { persistTheme, loadTheme } from "@/src/services/theme_service";
 
-const useThemeStore = create((set, get) => ({
-  isDarkMode: getTheme(),
+export const useThemeStore = create((set) => ({
+  isDarkMode: false,
 
-  toggleTheme: async () => {
-    const current = get().isDarkMode;
-    const next = !current;
-    set({ isDarkMode: next });
-    await saveTheme(next); // delegiert an Service
+  initTheme: () => {
+    const stored = loadTheme();
+    set({ isDarkMode: stored });
+  },
+
+  setDarkMode: (value) => {
+    persistTheme(value);
+    set({ isDarkMode: value });
   },
 }));
-
-export default useThemeStore;
