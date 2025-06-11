@@ -18,6 +18,7 @@ const darkTheme = {
     neutral: baseTheme.colors.neutral.n800,
     neutralHover: baseTheme.colors.neutral.n700,
     neutralAlt: baseTheme.colors.neutral.n900,
+    neutralSpecial: baseTheme.colors.neutral.n900,
     accent: baseTheme.colors.primary.hover,
     accentHover: baseTheme.colors.primary.base,
     accentAlt: baseTheme.colors.primary.light,
