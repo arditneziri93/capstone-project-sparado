@@ -28,7 +28,7 @@ export default function HomePage() {
   return (
     <PageLayout title="Categories">
       <CategoryList>
-        {categories.length !== 0 ? (
+        {categories.length === 0 ? (
           <FallbackWrapper>
             <BB>No categories available.</BB>
           </FallbackWrapper>
