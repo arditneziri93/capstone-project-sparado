@@ -9,10 +9,9 @@ export const ButtonType = {
 };
 
 const ButtonStyled = styled.button`
-  padding: 12px 24px;
-  border-radius: 12px;
+  padding: ${({ theme }) => `${theme.size.ml} ${theme.size.xl}`};
+  border-radius: ${({ theme }) => theme.size.ml};
   font-weight: bold;
-  font-size: 14px;
   border: none;
   transition: all 0.2s ease;
   display: inline-flex;
