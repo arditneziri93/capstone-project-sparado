@@ -6,6 +6,11 @@ export default createGlobalStyle`
   *::before,
   *::after {
     box-sizing: border-box;
+    transition: background-color 0.5s ease;
+  }
+
+  body{
+    transition: color 0.5 ease;
   }
 
   body {
@@ -14,7 +19,10 @@ export default createGlobalStyle`
     font-family: ${({ theme }) => theme.typography.bodyBase.fontFamily};
     background-color: ${({ theme }) => theme.surface.neutralAlt};
     color: ${({ theme }) => theme.text.neutral};
+    background-color: ${({ theme }) => theme.surface.neutral};
+    color: ${({ theme }) => theme.text.neutral};
   }
+  
 
   a {
     text-decoration: none;

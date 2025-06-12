@@ -12,13 +12,11 @@ export const IconComponent = ({
 }) => {
   const theme = useTheme();
   if (!icon) return null;
-  const resolveColor = (color) => {
-    if (color === undefined) {
-      return theme.color.neutral;
-    } else {
-      return color;
-    }
-  };
 
-  return icon({ size, resolveColor, variant, ...props });
+  return icon({
+    size,
+    color: color ?? "currentColor",
+    variant,
+    ...props,
+  });
 };

@@ -11,20 +11,19 @@ const Wrapper = styled.li`
   justify-content: flex-start;
   gap: ${({ theme }) => theme.size.l};
   padding: ${({ theme }) => theme.size.ml};
-  color: inherit;
-  text-decoration: none !important;
   list-style: none;
   border-radius: ${({ theme }) => theme.size.ml};
+  color: ${({ theme }) => theme.text.neutral};
+  background-color: transparent;
+  transition: background-color 0.5s, color 0.5s ease;
 
   &:hover {
-    background-color: ${({ theme }) => theme.surface.neutralAlt};
+    background-color: ${({ theme }) => theme.surface.neutralHover};
     cursor: pointer;
-    text-decoration: none !important;
   }
 
   &.sidebar-item--active {
-    background-color: ${({ theme }) => theme.surface.neutralAlt};
-    text-decoration: none !important;
+    background-color: ${({ theme }) => theme.surface.neutralHover};
   }
 `;
 
@@ -43,10 +42,10 @@ export default function SidebarItem({ label, href, icon }) {
         <IconComponent
           icon={icon}
           size={IconSize.M}
-          color={theme.text.neutral}
+          color="currentColor" // ← übernimmt die CSS-Farbe
           variant={IconVariant.LINEAR}
         />
-        <LL color={theme.text.neutral}>{label}</LL>
+        <LL>{label}</LL>
       </Wrapper>
     </ConditionalLink>
   );

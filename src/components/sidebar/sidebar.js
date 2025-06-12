@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import ConditionalLink from "../conditional_link";
 import SidebarItem from "./_sidebar_item";
-import { IconComponent, IconType } from "../icons";
+import { IconType } from "../icons";
+import ThemeSwitch from "./_theme_switch";
+import { useThemeStore } from "@/src/stores/theme_store";
 
 const SidebarArea = styled.div`
   width: ${({ theme }) => theme.size.xl8};
@@ -11,12 +13,13 @@ const SidebarArea = styled.div`
   padding-bottom: ${({ theme }) => theme.size.xl};
   background-color: ${({ theme }) => theme.surface.neutral};
   justify-content: space-between;
+  align-items: center;
   display: flex;
   flex-direction: column;
   height: 100%;
 `;
 
-const SideBarContent = styled.div`
+const SideBarNavWrapper = styled.div`
   gap: ${({ theme }) => theme.size.xl2};
   display: flex;
   flex-direction: column;
@@ -38,9 +41,11 @@ const Ul = styled.ul`
 `;
 
 export default function Sidebar() {
+  const { isDarkMode, setDarkMode } = useThemeStore();
+
   return (
     <SidebarArea>
-      <SideBarContent>
+      <SideBarNavWrapper>
         <ConditionalLink href="/">
           <Logo src="/images/logo.svg" alt="Logo" />
         </ConditionalLink>
@@ -68,7 +73,11 @@ export default function Sidebar() {
             />
           </Ul>
         </nav>
-      </SideBarContent>
+      </SideBarNavWrapper>
+      <ThemeSwitch
+        isDarkMode={isDarkMode}
+        onToggle={(value) => setDarkMode(value)}
+      />
     </SidebarArea>
   );
 }

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { H1, BB } from "../components/typography.js";
+import { H1, BB } from "@/src/components/typography.js";
 
 const Container = styled.div`
   width: 100%;

@@ -13,7 +13,7 @@ const LayoutWrapper = styled.div`
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  padding: ${({ theme }) => theme.size.xl2};
+  padding: ${({ theme }) => theme.size.xl};
   padding-bottom: 0;
   display: flex;
   flex-direction: column;

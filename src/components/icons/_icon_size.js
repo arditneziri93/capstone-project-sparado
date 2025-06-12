@@ -1,4 +1,4 @@
-import baseTheme from "../../styles/themes/base.js";
+import baseTheme from "@/src/styles/themes/base.js";
 
 export const IconSize = {
   XS: baseTheme.icons.xs,
