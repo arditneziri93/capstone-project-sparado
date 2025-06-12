@@ -7,7 +7,7 @@ const createTextComponent = (Tag, styleKey) => styled(Tag)`
     const weight = parseInt(theme.typography[styleKey].weight, 10) || 400;
     return isHighlighted ? weight + 100 : weight;
   }};
-  color: ${({ color }) => color || "inherit"};
+  color: ${({ color = "inherit" }) => color};
 `;
 
 // Headings
