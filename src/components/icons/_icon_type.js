@@ -6,6 +6,8 @@ import {
   Home2,
   Sun1,
   Moon,
+  Edit2,
+  Trash,
 } from "iconsax-reactjs";
 
 export const IconType = {
@@ -16,4 +18,6 @@ export const IconType = {
   SETTINGS: (props) => <Setting2 {...props} />,
   LIGHTMODE: (props) => <Sun1 {...props} />,
   DARKMODE: (props) => <Moon {...props} />,
+  EDIT: (props) => <Edit2 {...props} />,
+  DELETE: (props) => <Trash {...props} />,
 };
