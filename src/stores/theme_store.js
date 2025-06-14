@@ -1,16 +1,10 @@
-import { create } from "zustand";
-import { persistTheme, loadTheme } from "@/src/services/theme_service";
+import { useTheme } from "@/src/services/theme_service";
 
-export const useThemeStore = create((set) => ({
-  isDarkMode: false,
+export const useThemeStore = () => {
+  const [isDarkMode, setDarkMode] = useTheme();
 
-  initTheme: () => {
-    const stored = loadTheme();
-    set({ isDarkMode: stored });
-  },
-
-  setDarkMode: (value) => {
-    persistTheme(value);
-    set({ isDarkMode: value });
-  },
-}));
+  return {
+    isDarkMode,
+    setDarkMode,
+  };
+};

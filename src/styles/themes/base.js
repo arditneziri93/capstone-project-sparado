@@ -67,6 +67,26 @@ const baseTheme = {
       hover: "#1F56D8",
       on: "#FFFFFF",
     },
+    categoryColors: {
+      category1: "#F23B2F", // Health
+      category2: "#EA2E66", // Shopping
+      category3: "#BB33D6", // Insurance
+      category4: "#885BFB", // Rent
+      category5: "#566CFC", // Utilities
+      category6: "#3897EF", // Education
+      category7: "#4FB6EE", // Travel
+      category8: "#60CFDF", // ?
+      category9: "#15C1B0", // Salary
+      category10: "#53C757", // Groceries
+      category11: "#95ED36", // Savings
+      category12: "#D2E430", // Subscriptions
+      category13: "#F1D70A", // Entertainment
+      category14: "#FFBE1C", // Pets
+      category15: "#FF930D", // Restaurants
+      category16: "#B66D11", // Transportation
+      category17: "#946555", // Miscellaneous
+      category18: "#71898E", // Other
+    },
   },
   icons: {
     xxs: "10px",
