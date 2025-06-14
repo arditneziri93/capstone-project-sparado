@@ -3,6 +3,13 @@ import { IconType } from "./icons";
 import IconButton from "./icon_button";
 import { BB } from "./typography";
 
+const ActionsWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+`;
+
 const Container = styled.div`
   background-color: ${({ theme }) => theme.surface.neutral};
   border-radius: ${({ theme }) => theme.size.m};
@@ -11,7 +18,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  &:hover .actions {
+  &:hover ${ActionsWrapper} {
     opacity: 1;
     pointer-events: auto;
   }
@@ -43,13 +50,6 @@ const Label = styled(BB)`
   white-space: nowrap;
 `;
 
-const ActionsWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-`;
-
 export default function CategoryItem({ label, color, onEdit, onDelete }) {
   return (
     <Container>
@@ -57,7 +57,7 @@ export default function CategoryItem({ label, color, onEdit, onDelete }) {
         <ColorDot color={color} />
         <Label>{label}</Label>
       </ContentWrapper>
-      <ActionsWrapper className="actions">
+      <ActionsWrapper>
         <IconButton icon={IconType.EDIT} onClick={onEdit} isCompact />
         <IconButton icon={IconType.DELETE} onClick={onDelete} isCompact />
       </ActionsWrapper>
