@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { IconType } from "./icons";
-import IconButton from "./icon_button";
-import { BB } from "./typography";
+import { IconType } from "../shared/icons";
+import IconButton from "../shared/icon_button";
+import { BB } from "../shared/typography";
 
 const ActionsWrapper = styled.div`
   display: flex;

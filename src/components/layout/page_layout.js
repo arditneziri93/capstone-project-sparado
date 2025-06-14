@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import Breadcrumbs from "../breadcrumbs";
-import { C } from "../typography";
+import Breadcrumbs from "../shared/breadcrumbs";
+import { C } from "../shared/typography";
 
 const OuterWrapper = styled.div`
   min-height: 100%;

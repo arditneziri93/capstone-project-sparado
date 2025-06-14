@@ -1,9 +1,9 @@
-import { Button } from "@/src/components/button";
-import CategoryItem from "@/src/components/category_item";
+import { Button } from "@/src/components/shared/button";
+import CategoryItem from "@/src/components/categoriies_page/category_item";
 import PageLayout from "@/src/components/layout/page_layout";
 import styled from "styled-components";
 import { useCategoryStore } from "@/src/stores/categories_store";
-import { BB } from "@/src/components/typography";
+import { BB } from "@/src/components/shared/typography";
 
 const CategoryList = styled.div`
   display: grid;
