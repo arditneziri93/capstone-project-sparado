@@ -7,11 +7,7 @@ import { useThemeStore } from "@/src/stores/theme_store";
 import { useEffect } from "react";
 
 export default function App({ Component, pageProps }) {
-  const { isDarkMode, initTheme } = useThemeStore();
-
-  useEffect(() => {
-    initTheme();
-  }, [initTheme]);
+  const { isDarkMode } = useThemeStore();
 
   return (
     <ThemeProvider theme={isDarkMode ? dark : light}>
