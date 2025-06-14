@@ -1,21 +1,10 @@
 import defaultCategories from "@/assets/data/categories.json";
+import useLocalStorageState from "use-local-storage-state";
 
-const STORAGE_KEY = "categories";
+export function useCategories() {
+  const [categories, setCategories] = useLocalStorageState("categories", {
+    defaultValue: defaultCategories,
+  });
 
-export const persistCategories = (value) => {
-  if (typeof window !== "undefined" && Array.isArray(value)) {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(value));
-  }
-};
-
-export const loadCategories = () => {
-  if (typeof window === "undefined") return [];
-
-  const stored = localStorage.getItem(STORAGE_KEY);
-
-  const parsed = JSON.parse(stored);
-  if (Array.isArray(parsed)) return parsed;
-
-  persistCategories(defaultCategories);
-  return defaultCategories;
-};
+  return [categories, setCategories];
+}
