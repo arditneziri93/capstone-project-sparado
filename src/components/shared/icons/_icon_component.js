@@ -15,7 +15,7 @@ export const IconComponent = ({
 
   return icon({
     size,
-    color: color ?? "currentColor",
+    color: color ?? theme.text.neutral,
     variant,
     ...props,
   });
