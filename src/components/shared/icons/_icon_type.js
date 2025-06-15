@@ -6,6 +6,13 @@ import {
   Home2,
   Sun1,
   Moon,
+  Edit2,
+  Trash,
+  ArrowLeft2,
+  ArrowRight2,
+  Calendar2,
+  SearchNormal1,
+  CloseCircle,
 } from "iconsax-reactjs";
 
 export const IconType = {
@@ -16,4 +23,11 @@ export const IconType = {
   SETTINGS: (props) => <Setting2 {...props} />,
   LIGHTMODE: (props) => <Sun1 {...props} />,
   DARKMODE: (props) => <Moon {...props} />,
+  EDIT: (props) => <Edit2 {...props} />,
+  DELETE: (props) => <Trash {...props} />,
+  CALENDAR: (props) => <Calendar2 {...props} />,
+  LEFT: (props) => <ArrowLeft2 {...props} />,
+  RIGHT: (props) => <ArrowRight2 {...props} />,
+  SEARCH: (props) => <SearchNormal1 {...props} />,
+  CLEAR: (props) => <CloseCircle {...props} />,
 };

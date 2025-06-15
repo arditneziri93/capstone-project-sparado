@@ -5,14 +5,14 @@ const darkTheme = {
   mode: "dark",
   text: {
     accent: baseTheme.colors.primary.base,
-    disabled: baseTheme.colors.neutral.n500,
+    disabled: baseTheme.colors.neutral.n600,
     onDark: baseTheme.colors.primary.on,
     neutral: baseTheme.colors.neutral.n100,
     neutralAlt: baseTheme.colors.neutral.n400,
-    success: baseTheme.colors.success.light,
-    danger: baseTheme.colors.danger.light,
-    warning: baseTheme.colors.warning.light,
-    info: baseTheme.colors.info.light,
+    success: baseTheme.colors.success.base,
+    danger: baseTheme.colors.danger.base,
+    warning: baseTheme.colors.warning.base,
+    info: baseTheme.colors.info.base,
   },
   surface: {
     neutral: baseTheme.colors.neutral.n800,
@@ -22,7 +22,7 @@ const darkTheme = {
     accent: baseTheme.colors.primary.hover,
     accentHover: baseTheme.colors.primary.base,
     accentAlt: baseTheme.colors.primary.light,
-    disabled: baseTheme.colors.neutral.n500,
+    disabled: baseTheme.colors.neutral.n600,
     success: baseTheme.colors.success.hover,
     successHover: baseTheme.colors.success.base,
     successAlt: baseTheme.colors.success.dark,
@@ -40,8 +40,13 @@ const darkTheme = {
     color: {
       accent: baseTheme.colors.primary.dark,
       neutral: baseTheme.colors.neutral.n400,
-      disabled: baseTheme.colors.neutral.n500,
+      success: baseTheme.colors.success.base,
+      danger: baseTheme.colors.danger.base,
+      warning: baseTheme.colors.warning.base,
+      info: baseTheme.colors.info.base,
+      disabled: baseTheme.colors.neutral.n600,
     },
+    size: baseTheme.size.xs,
   },
 };
 

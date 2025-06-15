@@ -1,72 +1,3502 @@
 [
   {
     "id": "1",
-    "amount": -50.75,
-    "category": "Groceries",
-    "type": "expense",
-    "date": "2024-07-01T00:00:00"
+    "amount": -952.27,
+    "category": "8",
+    "date": "2025-07-26T09:18:00",
+    "description": "Monthly rent"
   },
   {
     "id": "2",
-    "amount": -1200.0,
-    "category": "Rent",
-    "type": "expense",
-    "date": "2024-07-02T00:00:00"
+    "amount": -64.09,
+    "category": "7",
+    "date": "2024-10-18T12:32:00",
+    "description": "Donation"
   },
   {
     "id": "3",
-    "amount": 1500.0,
-    "category": "Salary",
-    "type": "income",
-    "date": "2024-07-03T00:00:00"
+    "amount": -92.05,
+    "category": "18",
+    "date": "2024-10-09T12:13:00",
+    "description": "Other expense"
   },
   {
     "id": "4",
-    "amount": -200.5,
-    "category": "Insurance",
-    "type": "expense",
-    "date": "2024-07-04T00:00:00"
+    "amount": -34.85,
+    "category": "17",
+    "date": "2025-04-06T09:08:00",
+    "description": "Vet visit"
   },
   {
     "id": "5",
-    "amount": -75.25,
-    "category": "Entertainment",
-    "type": "expense",
-    "date": "2024-07-05T00:00:00"
+    "amount": -135.41,
+    "category": "4",
+    "date": "2025-07-07T11:31:00",
+    "description": "Therapy"
   },
   {
     "id": "6",
-    "amount": -60.0,
-    "category": "Restaurants",
-    "type": "expense",
-    "date": "2024-07-06T00:00:00"
+    "amount": -31.78,
+    "category": "17",
+    "date": "2025-05-23T20:33:00",
+    "description": "Pet toys"
   },
   {
     "id": "7",
-    "amount": 500.0,
-    "category": "Investment",
-    "type": "income",
-    "date": "2024-07-07T00:00:00"
+    "amount": 1878.68,
+    "category": "10",
+    "date": "2025-05-17T09:04:00",
+    "description": "Bonus payout"
   },
   {
     "id": "8",
-    "amount": -30.0,
-    "category": "Transportation",
-    "type": "expense",
-    "date": "2024-07-08T00:00:00"
+    "amount": -37.77,
+    "category": "18",
+    "date": "2025-07-31T07:56:00",
+    "description": "Other expense"
   },
   {
     "id": "9",
-    "amount": -100.0,
-    "category": "Education",
-    "type": "expense",
-    "date": "2024-07-09T00:00:00"
+    "amount": 1192.37,
+    "category": "6",
+    "date": "2025-06-29T19:31:00",
+    "description": "Stock dividends"
   },
   {
     "id": "10",
-    "amount": 200.0,
-    "category": "Savings",
-    "type": "income",
-    "date": "2024-07-10T00:00:00"
+    "amount": 279.01,
+    "category": "11",
+    "date": "2024-12-17T21:24:00",
+    "description": "Emergency fund"
+  },
+  {
+    "id": "11",
+    "amount": -146.58,
+    "category": "4",
+    "date": "2025-04-12T22:17:00",
+    "description": "Doctor visit"
+  },
+  {
+    "id": "12",
+    "amount": -86.22,
+    "category": "15",
+    "date": "2025-02-09T15:22:00",
+    "description": "Clothes"
+  },
+  {
+    "id": "13",
+    "amount": -154.95,
+    "category": "4",
+    "date": "2025-01-04T14:36:00",
+    "description": "Doctor visit"
+  },
+  {
+    "id": "14",
+    "amount": -36.13,
+    "category": "9",
+    "date": "2025-04-21T10:54:00",
+    "description": "Dinner out"
+  },
+  {
+    "id": "15",
+    "amount": -146.23,
+    "category": "13",
+    "date": "2024-12-10T14:24:00",
+    "description": "Internet"
+  },
+  {
+    "id": "16",
+    "amount": -147.24,
+    "category": "1",
+    "date": "2025-05-06T20:53:00",
+    "description": "Course enrollment"
+  },
+  {
+    "id": "17",
+    "amount": -18.68,
+    "category": "9",
+    "date": "2024-09-08T21:28:00",
+    "description": "Pizza night"
+  },
+  {
+    "id": "18",
+    "amount": -25.98,
+    "category": "2",
+    "date": "2025-07-04T08:33:00",
+    "description": "Game purchase"
+  },
+  {
+    "id": "19",
+    "amount": -56.7,
+    "category": "9",
+    "date": "2025-04-16T12:28:00",
+    "description": "Lunch caf\u00e9"
+  },
+  {
+    "id": "20",
+    "amount": -77.14,
+    "category": "7",
+    "date": "2025-02-02T06:13:00",
+    "description": "Random expense"
+  },
+  {
+    "id": "21",
+    "amount": -912.3,
+    "category": "8",
+    "date": "2025-06-23T13:10:00",
+    "description": "Monthly rent"
+  },
+  {
+    "id": "22",
+    "amount": -848.4,
+    "category": "8",
+    "date": "2025-05-08T19:46:00",
+    "description": "Monthly rent"
+  },
+  {
+    "id": "23",
+    "amount": -5.97,
+    "category": "16",
+    "date": "2025-02-03T09:06:00",
+    "description": "Netflix"
+  },
+  {
+    "id": "24",
+    "amount": -141.78,
+    "category": "3",
+    "date": "2025-01-06T19:55:00",
+    "description": "Bakery"
+  },
+  {
+    "id": "25",
+    "amount": -170.97,
+    "category": "5",
+    "date": "2024-10-01T19:04:00",
+    "description": "Life insurance"
+  },
+  {
+    "id": "26",
+    "amount": -28.03,
+    "category": "12",
+    "date": "2025-04-13T19:45:00",
+    "description": "Bus ticket"
+  },
+  {
+    "id": "27",
+    "amount": -9.71,
+    "category": "12",
+    "date": "2025-01-06T21:15:00",
+    "description": "Train pass"
+  },
+  {
+    "id": "28",
+    "amount": -54.65,
+    "category": "13",
+    "date": "2024-12-06T20:42:00",
+    "description": "Internet"
+  },
+  {
+    "id": "29",
+    "amount": -224.0,
+    "category": "14",
+    "date": "2024-11-09T12:34:00",
+    "description": "Train ticket"
+  },
+  {
+    "id": "30",
+    "amount": -218.32,
+    "category": "5",
+    "date": "2025-04-20T21:24:00",
+    "description": "Life insurance"
+  },
+  {
+    "id": "31",
+    "amount": -96.89,
+    "category": "9",
+    "date": "2024-10-10T14:49:00",
+    "description": "Dinner out"
+  },
+  {
+    "id": "32",
+    "amount": -355.49,
+    "category": "14",
+    "date": "2025-01-10T13:21:00",
+    "description": "Train ticket"
+  },
+  {
+    "id": "33",
+    "amount": 494.25,
+    "category": "11",
+    "date": "2025-02-01T22:35:00",
+    "description": "Savings deposit"
+  },
+  {
+    "id": "34",
+    "amount": -81.7,
+    "category": "15",
+    "date": "2025-03-02T15:55:00",
+    "description": "Electronics"
+  },
+  {
+    "id": "35",
+    "amount": -241.6,
+    "category": "5",
+    "date": "2025-06-12T19:08:00",
+    "description": "Health premium"
+  },
+  {
+    "id": "36",
+    "amount": -870.38,
+    "category": "8",
+    "date": "2025-01-05T13:51:00",
+    "description": "Apartment lease"
+  },
+  {
+    "id": "37",
+    "amount": -146.46,
+    "category": "1",
+    "date": "2024-11-28T21:15:00",
+    "description": "Textbooks"
+  },
+  {
+    "id": "38",
+    "amount": -78.67,
+    "category": "13",
+    "date": "2024-12-06T15:55:00",
+    "description": "Electric bill"
+  },
+  {
+    "id": "39",
+    "amount": -41.82,
+    "category": "17",
+    "date": "2024-09-04T20:57:00",
+    "description": "Pet toys"
+  },
+  {
+    "id": "40",
+    "amount": -35.18,
+    "category": "12",
+    "date": "2024-11-05T08:27:00",
+    "description": "Train pass"
+  },
+  {
+    "id": "41",
+    "amount": -41.73,
+    "category": "17",
+    "date": "2024-12-13T17:39:00",
+    "description": "Vet visit"
+  },
+  {
+    "id": "42",
+    "amount": -74.39,
+    "category": "2",
+    "date": "2024-10-26T13:01:00",
+    "description": "Streaming subscription"
+  },
+  {
+    "id": "43",
+    "amount": 2361.42,
+    "category": "10",
+    "date": "2024-11-08T13:49:00",
+    "description": "Freelance project"
+  },
+  {
+    "id": "44",
+    "amount": -20.37,
+    "category": "18",
+    "date": "2025-02-04T09:48:00",
+    "description": "Other expense"
+  },
+  {
+    "id": "45",
+    "amount": -10.08,
+    "category": "16",
+    "date": "2024-09-02T13:10:00",
+    "description": "Cloud storage"
+  },
+  {
+    "id": "46",
+    "amount": -7.83,
+    "category": "16",
+    "date": "2025-05-11T12:13:00",
+    "description": "Spotify"
+  },
+  {
+    "id": "47",
+    "amount": 858.25,
+    "category": "11",
+    "date": "2024-12-28T07:58:00",
+    "description": "Emergency fund"
+  },
+  {
+    "id": "48",
+    "amount": 1644.5,
+    "category": "6",
+    "date": "2025-05-16T10:15:00",
+    "description": "Stock dividends"
+  },
+  {
+    "id": "49",
+    "amount": -76.94,
+    "category": "1",
+    "date": "2025-01-18T08:27:00",
+    "description": "Course enrollment"
+  },
+  {
+    "id": "50",
+    "amount": 937.58,
+    "category": "6",
+    "date": "2024-10-19T15:26:00",
+    "description": "Investment return"
+  },
+  {
+    "id": "51",
+    "amount": -48.31,
+    "category": "1",
+    "date": "2025-07-26T15:57:00",
+    "description": "Textbooks"
+  },
+  {
+    "id": "52",
+    "amount": -312.64,
+    "category": "14",
+    "date": "2024-09-04T11:55:00",
+    "description": "Train ticket"
+  },
+  {
+    "id": "53",
+    "amount": -43.08,
+    "category": "3",
+    "date": "2024-10-28T08:01:00",
+    "description": "Bakery"
+  },
+  {
+    "id": "54",
+    "amount": -160.26,
+    "category": "1",
+    "date": "2024-12-15T13:15:00",
+    "description": "Course enrollment"
+  },
+  {
+    "id": "55",
+    "amount": -117.4,
+    "category": "3",
+    "date": "2025-05-01T14:58:00",
+    "description": "Weekly groceries"
+  },
+  {
+    "id": "56",
+    "amount": -208.04,
+    "category": "14",
+    "date": "2024-09-07T10:12:00",
+    "description": "Hotel"
+  },
+  {
+    "id": "57",
+    "amount": -90.98,
+    "category": "7",
+    "date": "2024-12-17T11:46:00",
+    "description": "Random expense"
+  },
+  {
+    "id": "58",
+    "amount": -84.3,
+    "category": "15",
+    "date": "2025-03-28T06:57:00",
+    "description": "Online shopping"
+  },
+  {
+    "id": "59",
+    "amount": 1672.08,
+    "category": "10",
+    "date": "2024-12-23T11:19:00",
+    "description": "Monthly salary"
+  },
+  {
+    "id": "60",
+    "amount": -185.82,
+    "category": "5",
+    "date": "2025-06-05T18:10:00",
+    "description": "Life insurance"
+  },
+  {
+    "id": "61",
+    "amount": -215.39,
+    "category": "5",
+    "date": "2024-09-25T11:52:00",
+    "description": "Health premium"
+  },
+  {
+    "id": "62",
+    "amount": 1361.39,
+    "category": "6",
+    "date": "2025-06-23T20:27:00",
+    "description": "Stock dividends"
+  },
+  {
+    "id": "63",
+    "amount": -62.29,
+    "category": "15",
+    "date": "2025-05-04T12:29:00",
+    "description": "Clothes"
+  },
+  {
+    "id": "64",
+    "amount": 903.66,
+    "category": "11",
+    "date": "2025-03-15T11:04:00",
+    "description": "Savings deposit"
+  },
+  {
+    "id": "65",
+    "amount": -276.19,
+    "category": "5",
+    "date": "2024-09-26T17:59:00",
+    "description": "Car insurance"
+  },
+  {
+    "id": "66",
+    "amount": -162.49,
+    "category": "5",
+    "date": "2025-06-07T06:48:00",
+    "description": "Health premium"
+  },
+  {
+    "id": "67",
+    "amount": -83.08,
+    "category": "1",
+    "date": "2024-11-13T21:40:00",
+    "description": "Exam fee"
+  },
+  {
+    "id": "68",
+    "amount": -56.7,
+    "category": "1",
+    "date": "2025-06-01T11:00:00",
+    "description": "Course enrollment"
+  },
+  {
+    "id": "69",
+    "amount": -75.05,
+    "category": "9",
+    "date": "2024-12-11T12:52:00",
+    "description": "Lunch caf\u00e9"
+  },
+  {
+    "id": "70",
+    "amount": -117.64,
+    "category": "13",
+    "date": "2025-04-20T06:39:00",
+    "description": "Electric bill"
+  },
+  {
+    "id": "71",
+    "amount": 932.34,
+    "category": "6",
+    "date": "2024-12-19T14:06:00",
+    "description": "Crypto gain"
+  },
+  {
+    "id": "72",
+    "amount": 1492.45,
+    "category": "10",
+    "date": "2024-09-30T22:27:00",
+    "description": "Monthly salary"
+  },
+  {
+    "id": "73",
+    "amount": -46.91,
+    "category": "12",
+    "date": "2024-09-25T11:44:00",
+    "description": "Bus ticket"
+  },
+  {
+    "id": "74",
+    "amount": 1084.79,
+    "category": "10",
+    "date": "2025-02-21T09:17:00",
+    "description": "Monthly salary"
+  },
+  {
+    "id": "75",
+    "amount": 1788.72,
+    "category": "10",
+    "date": "2025-01-10T07:04:00",
+    "description": "Monthly salary"
+  },
+  {
+    "id": "76",
+    "amount": -38.84,
+    "category": "9",
+    "date": "2024-12-12T22:10:00",
+    "description": "Dinner out"
+  },
+  {
+    "id": "77",
+    "amount": 433.62,
+    "category": "11",
+    "date": "2024-12-23T21:53:00",
+    "description": "Savings deposit"
+  },
+  {
+    "id": "78",
+    "amount": -140.98,
+    "category": "4",
+    "date": "2024-12-17T07:33:00",
+    "description": "Doctor visit"
+  },
+  {
+    "id": "79",
+    "amount": -94.12,
+    "category": "3",
+    "date": "2025-07-20T06:54:00",
+    "description": "Bakery"
+  },
+  {
+    "id": "80",
+    "amount": 652.0,
+    "category": "6",
+    "date": "2024-09-29T09:09:00",
+    "description": "Stock dividends"
+  },
+  {
+    "id": "81",
+    "amount": 1853.29,
+    "category": "10",
+    "date": "2025-02-16T06:28:00",
+    "description": "Monthly salary"
+  },
+  {
+    "id": "82",
+    "amount": 1049.98,
+    "category": "10",
+    "date": "2024-12-20T09:17:00",
+    "description": "Bonus payout"
+  },
+  {
+    "id": "83",
+    "amount": -164.07,
+    "category": "1",
+    "date": "2025-06-03T17:24:00",
+    "description": "Exam fee"
+  },
+  {
+    "id": "84",
+    "amount": -224.41,
+    "category": "5",
+    "date": "2024-10-05T07:01:00",
+    "description": "Life insurance"
+  },
+  {
+    "id": "85",
+    "amount": -147.43,
+    "category": "3",
+    "date": "2025-04-05T11:58:00",
+    "description": "Weekly groceries"
+  },
+  {
+    "id": "86",
+    "amount": -723.01,
+    "category": "8",
+    "date": "2024-11-05T10:24:00",
+    "description": "Monthly rent"
+  },
+  {
+    "id": "87",
+    "amount": -379.63,
+    "category": "14",
+    "date": "2024-11-04T14:26:00",
+    "description": "Flight"
+  },
+  {
+    "id": "88",
+    "amount": -56.52,
+    "category": "9",
+    "date": "2025-04-15T22:24:00",
+    "description": "Pizza night"
+  },
+  {
+    "id": "89",
+    "amount": -89.65,
+    "category": "18",
+    "date": "2024-11-24T20:21:00",
+    "description": "Other expense"
+  },
+  {
+    "id": "90",
+    "amount": 115.36,
+    "category": "11",
+    "date": "2025-03-08T08:21:00",
+    "description": "Extra savings"
+  },
+  {
+    "id": "91",
+    "amount": -298.0,
+    "category": "14",
+    "date": "2025-05-19T17:29:00",
+    "description": "Hotel"
+  },
+  {
+    "id": "92",
+    "amount": -719.14,
+    "category": "8",
+    "date": "2025-01-14T21:44:00",
+    "description": "Apartment lease"
+  },
+  {
+    "id": "93",
+    "amount": 633.01,
+    "category": "11",
+    "date": "2025-02-13T11:31:00",
+    "description": "Emergency fund"
+  },
+  {
+    "id": "94",
+    "amount": -32.56,
+    "category": "1",
+    "date": "2025-02-16T16:46:00",
+    "description": "Course enrollment"
+  },
+  {
+    "id": "95",
+    "amount": -225.51,
+    "category": "5",
+    "date": "2025-02-14T06:50:00",
+    "description": "Health premium"
+  },
+  {
+    "id": "96",
+    "amount": -187.65,
+    "category": "13",
+    "date": "2024-12-18T11:39:00",
+    "description": "Internet"
+  },
+  {
+    "id": "97",
+    "amount": -69.91,
+    "category": "13",
+    "date": "2025-07-30T14:19:00",
+    "description": "Internet"
+  },
+  {
+    "id": "98",
+    "amount": -81.12,
+    "category": "4",
+    "date": "2025-02-02T19:27:00",
+    "description": "Doctor visit"
+  },
+  {
+    "id": "99",
+    "amount": -67.57,
+    "category": "17",
+    "date": "2025-04-20T15:10:00",
+    "description": "Vet visit"
+  },
+  {
+    "id": "100",
+    "amount": -111.28,
+    "category": "14",
+    "date": "2024-11-25T12:00:00",
+    "description": "Hotel"
+  },
+  {
+    "id": "101",
+    "amount": -139.5,
+    "category": "15",
+    "date": "2025-04-22T12:07:00",
+    "description": "Clothes"
+  },
+  {
+    "id": "102",
+    "amount": -6.25,
+    "category": "16",
+    "date": "2025-05-11T18:38:00",
+    "description": "Cloud storage"
+  },
+  {
+    "id": "103",
+    "amount": -44.57,
+    "category": "18",
+    "date": "2025-04-15T10:38:00",
+    "description": "Misc purchase"
+  },
+  {
+    "id": "104",
+    "amount": -98.45,
+    "category": "4",
+    "date": "2024-12-25T07:11:00",
+    "description": "Medication"
+  },
+  {
+    "id": "105",
+    "amount": -293.85,
+    "category": "15",
+    "date": "2025-02-23T12:25:00",
+    "description": "Online shopping"
+  },
+  {
+    "id": "106",
+    "amount": -115.87,
+    "category": "13",
+    "date": "2025-02-06T13:18:00",
+    "description": "Electric bill"
+  },
+  {
+    "id": "107",
+    "amount": -168.56,
+    "category": "13",
+    "date": "2025-01-26T14:59:00",
+    "description": "Water fee"
+  },
+  {
+    "id": "108",
+    "amount": -270.51,
+    "category": "15",
+    "date": "2024-09-10T06:45:00",
+    "description": "Electronics"
+  },
+  {
+    "id": "109",
+    "amount": -71.18,
+    "category": "18",
+    "date": "2024-11-12T16:08:00",
+    "description": "Misc purchase"
+  },
+  {
+    "id": "110",
+    "amount": -20.57,
+    "category": "16",
+    "date": "2025-07-03T11:57:00",
+    "description": "Spotify"
+  },
+  {
+    "id": "111",
+    "amount": -56.48,
+    "category": "17",
+    "date": "2025-01-13T08:51:00",
+    "description": "Dog food"
+  },
+  {
+    "id": "112",
+    "amount": -73.4,
+    "category": "18",
+    "date": "2024-12-27T06:57:00",
+    "description": "Misc purchase"
+  },
+  {
+    "id": "113",
+    "amount": -83.09,
+    "category": "18",
+    "date": "2025-01-10T11:48:00",
+    "description": "Other expense"
+  },
+  {
+    "id": "114",
+    "amount": -63.36,
+    "category": "2",
+    "date": "2025-06-10T18:48:00",
+    "description": "Streaming subscription"
+  },
+  {
+    "id": "115",
+    "amount": -21.13,
+    "category": "16",
+    "date": "2024-11-27T20:24:00",
+    "description": "Netflix"
+  },
+  {
+    "id": "116",
+    "amount": -75.68,
+    "category": "7",
+    "date": "2024-09-16T11:15:00",
+    "description": "Gift"
+  },
+  {
+    "id": "117",
+    "amount": -53.68,
+    "category": "13",
+    "date": "2025-06-15T17:34:00",
+    "description": "Water fee"
+  },
+  {
+    "id": "118",
+    "amount": -83.62,
+    "category": "13",
+    "date": "2024-10-17T15:57:00",
+    "description": "Internet"
+  },
+  {
+    "id": "119",
+    "amount": -36.25,
+    "category": "12",
+    "date": "2025-05-12T10:02:00",
+    "description": "Train pass"
+  },
+  {
+    "id": "120",
+    "amount": -55.0,
+    "category": "1",
+    "date": "2025-04-23T17:50:00",
+    "description": "Course enrollment"
+  },
+  {
+    "id": "121",
+    "amount": -14.89,
+    "category": "2",
+    "date": "2025-03-10T10:10:00",
+    "description": "Streaming subscription"
+  },
+  {
+    "id": "122",
+    "amount": -83.2,
+    "category": "3",
+    "date": "2025-04-26T08:40:00",
+    "description": "Weekly groceries"
+  },
+  {
+    "id": "123",
+    "amount": 214.24,
+    "category": "11",
+    "date": "2024-09-20T13:53:00",
+    "description": "Emergency fund"
+  },
+  {
+    "id": "124",
+    "amount": -157.39,
+    "category": "15",
+    "date": "2025-04-05T06:16:00",
+    "description": "Electronics"
+  },
+  {
+    "id": "125",
+    "amount": -126.03,
+    "category": "14",
+    "date": "2025-05-12T11:47:00",
+    "description": "Hotel"
+  },
+  {
+    "id": "126",
+    "amount": 2437.77,
+    "category": "10",
+    "date": "2025-03-08T10:43:00",
+    "description": "Bonus payout"
+  },
+  {
+    "id": "127",
+    "amount": -22.35,
+    "category": "2",
+    "date": "2025-03-10T19:57:00",
+    "description": "Streaming subscription"
+  },
+  {
+    "id": "128",
+    "amount": -96.84,
+    "category": "18",
+    "date": "2024-12-10T16:09:00",
+    "description": "Misc purchase"
+  },
+  {
+    "id": "129",
+    "amount": -67.42,
+    "category": "9",
+    "date": "2024-11-19T14:31:00",
+    "description": "Dinner out"
+  },
+  {
+    "id": "130",
+    "amount": 1196.14,
+    "category": "10",
+    "date": "2025-06-20T16:41:00",
+    "description": "Monthly salary"
+  },
+  {
+    "id": "131",
+    "amount": -36.35,
+    "category": "17",
+    "date": "2025-06-20T07:02:00",
+    "description": "Pet toys"
+  },
+  {
+    "id": "132",
+    "amount": -103.06,
+    "category": "3",
+    "date": "2024-12-24T09:26:00",
+    "description": "Supermarket"
+  },
+  {
+    "id": "133",
+    "amount": 1790.36,
+    "category": "10",
+    "date": "2025-03-23T13:35:00",
+    "description": "Monthly salary"
+  },
+  {
+    "id": "134",
+    "amount": -144.43,
+    "category": "4",
+    "date": "2024-10-28T22:50:00",
+    "description": "Medication"
+  },
+  {
+    "id": "135",
+    "amount": 2036.59,
+    "category": "10",
+    "date": "2024-09-18T22:37:00",
+    "description": "Freelance project"
+  },
+  {
+    "id": "136",
+    "amount": -32.3,
+    "category": "12",
+    "date": "2024-09-04T14:35:00",
+    "description": "Bus ticket"
+  },
+  {
+    "id": "137",
+    "amount": -16.19,
+    "category": "16",
+    "date": "2025-07-02T11:25:00",
+    "description": "Cloud storage"
+  },
+  {
+    "id": "138",
+    "amount": -49.86,
+    "category": "18",
+    "date": "2024-09-26T22:44:00",
+    "description": "Other expense"
+  },
+  {
+    "id": "139",
+    "amount": -11.46,
+    "category": "2",
+    "date": "2025-05-18T09:22:00",
+    "description": "Streaming subscription"
+  },
+  {
+    "id": "140",
+    "amount": -179.91,
+    "category": "13",
+    "date": "2025-05-06T19:07:00",
+    "description": "Internet"
+  },
+  {
+    "id": "141",
+    "amount": -47.12,
+    "category": "1",
+    "date": "2025-02-21T18:48:00",
+    "description": "Exam fee"
+  },
+  {
+    "id": "142",
+    "amount": -76.31,
+    "category": "18",
+    "date": "2024-10-26T14:34:00",
+    "description": "Other expense"
+  },
+  {
+    "id": "143",
+    "amount": -147.07,
+    "category": "13",
+    "date": "2024-10-23T09:49:00",
+    "description": "Electric bill"
+  },
+  {
+    "id": "144",
+    "amount": -81.45,
+    "category": "13",
+    "date": "2024-10-18T06:59:00",
+    "description": "Internet"
+  },
+  {
+    "id": "145",
+    "amount": -156.55,
+    "category": "15",
+    "date": "2024-10-27T08:27:00",
+    "description": "Electronics"
+  },
+  {
+    "id": "146",
+    "amount": 1257.54,
+    "category": "6",
+    "date": "2024-10-11T18:34:00",
+    "description": "Stock dividends"
+  },
+  {
+    "id": "147",
+    "amount": -112.25,
+    "category": "13",
+    "date": "2024-12-25T10:24:00",
+    "description": "Internet"
+  },
+  {
+    "id": "148",
+    "amount": -299.15,
+    "category": "5",
+    "date": "2025-03-14T21:21:00",
+    "description": "Car insurance"
+  },
+  {
+    "id": "149",
+    "amount": 879.23,
+    "category": "11",
+    "date": "2024-11-02T09:36:00",
+    "description": "Extra savings"
+  },
+  {
+    "id": "150",
+    "amount": -70.9,
+    "category": "1",
+    "date": "2024-10-23T10:03:00",
+    "description": "Course enrollment"
+  },
+  {
+    "id": "151",
+    "amount": -204.82,
+    "category": "5",
+    "date": "2024-11-28T19:06:00",
+    "description": "Car insurance"
+  },
+  {
+    "id": "152",
+    "amount": -13.21,
+    "category": "12",
+    "date": "2024-11-12T06:01:00",
+    "description": "Bus ticket"
+  },
+  {
+    "id": "153",
+    "amount": -217.02,
+    "category": "14",
+    "date": "2025-03-31T09:44:00",
+    "description": "Hotel"
+  },
+  {
+    "id": "154",
+    "amount": -194.11,
+    "category": "5",
+    "date": "2025-05-22T18:47:00",
+    "description": "Life insurance"
+  },
+  {
+    "id": "155",
+    "amount": -50.09,
+    "category": "9",
+    "date": "2025-05-30T15:59:00",
+    "description": "Pizza night"
+  },
+  {
+    "id": "156",
+    "amount": -409.16,
+    "category": "14",
+    "date": "2024-10-19T21:06:00",
+    "description": "Flight"
+  },
+  {
+    "id": "157",
+    "amount": -24.93,
+    "category": "16",
+    "date": "2024-11-02T22:58:00",
+    "description": "Netflix"
+  },
+  {
+    "id": "158",
+    "amount": -151.63,
+    "category": "13",
+    "date": "2025-03-26T16:05:00",
+    "description": "Water fee"
+  },
+  {
+    "id": "159",
+    "amount": -145.22,
+    "category": "1",
+    "date": "2024-12-25T13:27:00",
+    "description": "Exam fee"
+  },
+  {
+    "id": "160",
+    "amount": -15.91,
+    "category": "12",
+    "date": "2025-04-26T07:42:00",
+    "description": "Taxi ride"
+  },
+  {
+    "id": "161",
+    "amount": -94.79,
+    "category": "1",
+    "date": "2024-11-21T09:36:00",
+    "description": "Textbooks"
+  },
+  {
+    "id": "162",
+    "amount": -71.57,
+    "category": "17",
+    "date": "2025-04-05T20:23:00",
+    "description": "Pet toys"
+  },
+  {
+    "id": "163",
+    "amount": -174.66,
+    "category": "4",
+    "date": "2025-05-23T19:17:00",
+    "description": "Medication"
+  },
+  {
+    "id": "164",
+    "amount": -50.36,
+    "category": "12",
+    "date": "2025-04-13T12:11:00",
+    "description": "Train pass"
+  },
+  {
+    "id": "165",
+    "amount": -47.64,
+    "category": "17",
+    "date": "2024-11-25T20:04:00",
+    "description": "Pet toys"
+  },
+  {
+    "id": "166",
+    "amount": -37.14,
+    "category": "12",
+    "date": "2025-04-22T17:04:00",
+    "description": "Bus ticket"
+  },
+  {
+    "id": "167",
+    "amount": -58.17,
+    "category": "9",
+    "date": "2024-09-25T14:01:00",
+    "description": "Pizza night"
+  },
+  {
+    "id": "168",
+    "amount": 964.17,
+    "category": "6",
+    "date": "2025-06-09T21:51:00",
+    "description": "Crypto gain"
+  },
+  {
+    "id": "169",
+    "amount": -263.14,
+    "category": "15",
+    "date": "2024-11-08T19:50:00",
+    "description": "Electronics"
+  },
+  {
+    "id": "170",
+    "amount": -23.37,
+    "category": "16",
+    "date": "2025-05-08T10:09:00",
+    "description": "Spotify"
+  },
+  {
+    "id": "171",
+    "amount": -253.94,
+    "category": "5",
+    "date": "2025-02-23T19:26:00",
+    "description": "Car insurance"
+  },
+  {
+    "id": "172",
+    "amount": -113.83,
+    "category": "3",
+    "date": "2024-10-14T22:35:00",
+    "description": "Bakery"
+  },
+  {
+    "id": "173",
+    "amount": -722.5,
+    "category": "8",
+    "date": "2025-02-17T20:51:00",
+    "description": "Monthly rent"
+  },
+  {
+    "id": "174",
+    "amount": -55.94,
+    "category": "12",
+    "date": "2025-02-07T14:01:00",
+    "description": "Train pass"
+  },
+  {
+    "id": "175",
+    "amount": -194.1,
+    "category": "4",
+    "date": "2025-04-21T08:57:00",
+    "description": "Medication"
+  },
+  {
+    "id": "176",
+    "amount": -113.58,
+    "category": "4",
+    "date": "2025-06-18T10:58:00",
+    "description": "Therapy"
+  },
+  {
+    "id": "177",
+    "amount": -91.45,
+    "category": "7",
+    "date": "2024-09-16T09:27:00",
+    "description": "Gift"
+  },
+  {
+    "id": "178",
+    "amount": -31.46,
+    "category": "9",
+    "date": "2025-07-29T13:18:00",
+    "description": "Dinner out"
+  },
+  {
+    "id": "179",
+    "amount": -80.61,
+    "category": "2",
+    "date": "2024-10-14T14:41:00",
+    "description": "Streaming subscription"
+  },
+  {
+    "id": "180",
+    "amount": -40.44,
+    "category": "12",
+    "date": "2024-11-09T13:39:00",
+    "description": "Taxi ride"
+  },
+  {
+    "id": "181",
+    "amount": 718.46,
+    "category": "11",
+    "date": "2025-02-20T06:18:00",
+    "description": "Emergency fund"
+  },
+  {
+    "id": "182",
+    "amount": -115.16,
+    "category": "15",
+    "date": "2025-03-14T13:06:00",
+    "description": "Electronics"
+  },
+  {
+    "id": "183",
+    "amount": -115.64,
+    "category": "4",
+    "date": "2025-04-19T17:19:00",
+    "description": "Doctor visit"
+  },
+  {
+    "id": "184",
+    "amount": 1924.43,
+    "category": "10",
+    "date": "2024-10-02T06:48:00",
+    "description": "Freelance project"
+  },
+  {
+    "id": "185",
+    "amount": -64.86,
+    "category": "9",
+    "date": "2024-09-30T21:38:00",
+    "description": "Pizza night"
+  },
+  {
+    "id": "186",
+    "amount": -10.15,
+    "category": "16",
+    "date": "2024-11-05T20:41:00",
+    "description": "Spotify"
+  },
+  {
+    "id": "187",
+    "amount": 794.84,
+    "category": "6",
+    "date": "2025-05-11T14:22:00",
+    "description": "Stock dividends"
+  },
+  {
+    "id": "188",
+    "amount": -198.96,
+    "category": "5",
+    "date": "2024-09-21T11:59:00",
+    "description": "Health premium"
+  },
+  {
+    "id": "189",
+    "amount": -290.63,
+    "category": "15",
+    "date": "2025-03-15T06:26:00",
+    "description": "Online shopping"
+  },
+  {
+    "id": "190",
+    "amount": -47.42,
+    "category": "4",
+    "date": "2024-10-08T07:37:00",
+    "description": "Doctor visit"
+  },
+  {
+    "id": "191",
+    "amount": -28.15,
+    "category": "3",
+    "date": "2025-02-05T18:22:00",
+    "description": "Bakery"
+  },
+  {
+    "id": "192",
+    "amount": 830.91,
+    "category": "11",
+    "date": "2024-12-07T17:39:00",
+    "description": "Emergency fund"
+  },
+  {
+    "id": "193",
+    "amount": -43.46,
+    "category": "12",
+    "date": "2024-12-20T15:02:00",
+    "description": "Taxi ride"
+  },
+  {
+    "id": "194",
+    "amount": 1683.13,
+    "category": "6",
+    "date": "2025-04-06T18:53:00",
+    "description": "Crypto gain"
+  },
+  {
+    "id": "195",
+    "amount": -173.89,
+    "category": "1",
+    "date": "2024-11-01T08:32:00",
+    "description": "Course enrollment"
+  },
+  {
+    "id": "196",
+    "amount": -737.55,
+    "category": "8",
+    "date": "2025-03-05T18:24:00",
+    "description": "Monthly rent"
+  },
+  {
+    "id": "197",
+    "amount": -174.16,
+    "category": "14",
+    "date": "2024-10-20T18:44:00",
+    "description": "Hotel"
+  },
+  {
+    "id": "198",
+    "amount": -947.36,
+    "category": "8",
+    "date": "2025-05-25T16:40:00",
+    "description": "Monthly rent"
+  },
+  {
+    "id": "199",
+    "amount": -53.8,
+    "category": "17",
+    "date": "2025-06-16T19:16:00",
+    "description": "Dog food"
+  },
+  {
+    "id": "200",
+    "amount": 991.96,
+    "category": "11",
+    "date": "2025-06-14T14:46:00",
+    "description": "Savings deposit"
+  },
+  {
+    "id": "201",
+    "amount": -23.8,
+    "category": "2",
+    "date": "2025-01-12T09:40:00",
+    "description": "Movie night"
+  },
+  {
+    "id": "202",
+    "amount": -84.95,
+    "category": "3",
+    "date": "2024-09-17T06:05:00",
+    "description": "Weekly groceries"
+  },
+  {
+    "id": "203",
+    "amount": -160.31,
+    "category": "1",
+    "date": "2025-07-18T08:00:00",
+    "description": "Exam fee"
+  },
+  {
+    "id": "204",
+    "amount": 1161.63,
+    "category": "6",
+    "date": "2025-04-18T19:39:00",
+    "description": "Stock dividends"
+  },
+  {
+    "id": "205",
+    "amount": -164.58,
+    "category": "13",
+    "date": "2025-05-08T08:15:00",
+    "description": "Water fee"
+  },
+  {
+    "id": "206",
+    "amount": -129.37,
+    "category": "5",
+    "date": "2024-09-16T10:34:00",
+    "description": "Life insurance"
+  },
+  {
+    "id": "207",
+    "amount": -44.05,
+    "category": "7",
+    "date": "2025-03-02T21:13:00",
+    "description": "Donation"
+  },
+  {
+    "id": "208",
+    "amount": -36.91,
+    "category": "9",
+    "date": "2025-05-01T18:13:00",
+    "description": "Lunch caf\u00e9"
+  },
+  {
+    "id": "209",
+    "amount": -58.73,
+    "category": "9",
+    "date": "2024-12-17T21:20:00",
+    "description": "Lunch caf\u00e9"
+  },
+  {
+    "id": "210",
+    "amount": -25.31,
+    "category": "16",
+    "date": "2024-11-05T08:19:00",
+    "description": "Cloud storage"
+  },
+  {
+    "id": "211",
+    "amount": -210.4,
+    "category": "15",
+    "date": "2025-04-09T17:00:00",
+    "description": "Clothes"
+  },
+  {
+    "id": "212",
+    "amount": -84.44,
+    "category": "15",
+    "date": "2025-03-25T19:35:00",
+    "description": "Online shopping"
+  },
+  {
+    "id": "213",
+    "amount": -46.48,
+    "category": "4",
+    "date": "2024-10-01T18:16:00",
+    "description": "Medication"
+  },
+  {
+    "id": "214",
+    "amount": -59.64,
+    "category": "4",
+    "date": "2024-11-24T14:27:00",
+    "description": "Therapy"
+  },
+  {
+    "id": "215",
+    "amount": -978.39,
+    "category": "8",
+    "date": "2025-06-19T15:58:00",
+    "description": "Apartment lease"
+  },
+  {
+    "id": "216",
+    "amount": -232.11,
+    "category": "15",
+    "date": "2025-01-12T16:57:00",
+    "description": "Clothes"
+  },
+  {
+    "id": "217",
+    "amount": -42.23,
+    "category": "18",
+    "date": "2025-03-02T17:29:00",
+    "description": "Other expense"
+  },
+  {
+    "id": "218",
+    "amount": -94.2,
+    "category": "4",
+    "date": "2025-02-10T22:40:00",
+    "description": "Therapy"
+  },
+  {
+    "id": "219",
+    "amount": -7.62,
+    "category": "16",
+    "date": "2025-03-25T15:44:00",
+    "description": "Netflix"
+  },
+  {
+    "id": "220",
+    "amount": -148.65,
+    "category": "4",
+    "date": "2025-04-08T17:22:00",
+    "description": "Medication"
+  },
+  {
+    "id": "221",
+    "amount": -20.9,
+    "category": "9",
+    "date": "2025-04-16T09:37:00",
+    "description": "Dinner out"
+  },
+  {
+    "id": "222",
+    "amount": -39.86,
+    "category": "1",
+    "date": "2025-02-08T07:43:00",
+    "description": "Textbooks"
+  },
+  {
+    "id": "223",
+    "amount": -65.48,
+    "category": "1",
+    "date": "2024-11-09T09:37:00",
+    "description": "Exam fee"
+  },
+  {
+    "id": "224",
+    "amount": -61.29,
+    "category": "17",
+    "date": "2025-06-27T12:07:00",
+    "description": "Pet toys"
+  },
+  {
+    "id": "225",
+    "amount": -271.2,
+    "category": "14",
+    "date": "2024-12-11T15:54:00",
+    "description": "Flight"
+  },
+  {
+    "id": "226",
+    "amount": -54.51,
+    "category": "3",
+    "date": "2024-12-09T12:24:00",
+    "description": "Supermarket"
+  },
+  {
+    "id": "227",
+    "amount": -89.32,
+    "category": "18",
+    "date": "2024-12-22T18:33:00",
+    "description": "Other expense"
+  },
+  {
+    "id": "228",
+    "amount": -44.31,
+    "category": "18",
+    "date": "2024-09-13T08:06:00",
+    "description": "Other expense"
+  },
+  {
+    "id": "229",
+    "amount": -132.1,
+    "category": "15",
+    "date": "2025-02-06T21:24:00",
+    "description": "Online shopping"
+  },
+  {
+    "id": "230",
+    "amount": -100.22,
+    "category": "1",
+    "date": "2025-03-02T15:40:00",
+    "description": "Course enrollment"
+  },
+  {
+    "id": "231",
+    "amount": -20.25,
+    "category": "12",
+    "date": "2025-02-02T17:09:00",
+    "description": "Train pass"
+  },
+  {
+    "id": "232",
+    "amount": -44.81,
+    "category": "17",
+    "date": "2025-03-04T14:47:00",
+    "description": "Pet toys"
+  },
+  {
+    "id": "233",
+    "amount": -53.78,
+    "category": "9",
+    "date": "2024-12-17T10:26:00",
+    "description": "Dinner out"
+  },
+  {
+    "id": "234",
+    "amount": -297.09,
+    "category": "14",
+    "date": "2025-04-16T16:56:00",
+    "description": "Hotel"
+  },
+  {
+    "id": "235",
+    "amount": -70.1,
+    "category": "7",
+    "date": "2025-04-23T10:42:00",
+    "description": "Donation"
+  },
+  {
+    "id": "236",
+    "amount": -76.99,
+    "category": "18",
+    "date": "2025-06-06T20:32:00",
+    "description": "Other expense"
+  },
+  {
+    "id": "237",
+    "amount": -67.65,
+    "category": "7",
+    "date": "2025-01-08T12:52:00",
+    "description": "Random expense"
+  },
+  {
+    "id": "238",
+    "amount": -26.43,
+    "category": "16",
+    "date": "2025-04-19T09:49:00",
+    "description": "Spotify"
+  },
+  {
+    "id": "239",
+    "amount": 1418.24,
+    "category": "10",
+    "date": "2025-06-06T12:26:00",
+    "description": "Monthly salary"
+  },
+  {
+    "id": "240",
+    "amount": -270.46,
+    "category": "5",
+    "date": "2024-10-08T22:22:00",
+    "description": "Life insurance"
+  },
+  {
+    "id": "241",
+    "amount": -51.57,
+    "category": "18",
+    "date": "2025-03-11T13:06:00",
+    "description": "Other expense"
+  },
+  {
+    "id": "242",
+    "amount": 1609.66,
+    "category": "6",
+    "date": "2024-11-18T21:26:00",
+    "description": "Stock dividends"
+  },
+  {
+    "id": "243",
+    "amount": -278.71,
+    "category": "14",
+    "date": "2025-02-24T22:32:00",
+    "description": "Train ticket"
+  },
+  {
+    "id": "244",
+    "amount": -159.41,
+    "category": "15",
+    "date": "2025-03-19T12:20:00",
+    "description": "Online shopping"
+  },
+  {
+    "id": "245",
+    "amount": -466.93,
+    "category": "14",
+    "date": "2024-10-29T20:46:00",
+    "description": "Flight"
+  },
+  {
+    "id": "246",
+    "amount": -54.46,
+    "category": "7",
+    "date": "2025-01-22T16:54:00",
+    "description": "Donation"
+  },
+  {
+    "id": "247",
+    "amount": -84.89,
+    "category": "15",
+    "date": "2024-10-14T21:11:00",
+    "description": "Online shopping"
+  },
+  {
+    "id": "248",
+    "amount": -806.32,
+    "category": "8",
+    "date": "2025-01-10T20:42:00",
+    "description": "Monthly rent"
+  },
+  {
+    "id": "249",
+    "amount": 288.29,
+    "category": "11",
+    "date": "2024-11-19T15:13:00",
+    "description": "Savings deposit"
+  },
+  {
+    "id": "250",
+    "amount": -57.7,
+    "category": "17",
+    "date": "2025-06-16T08:17:00",
+    "description": "Pet toys"
+  },
+  {
+    "id": "251",
+    "amount": -902.75,
+    "category": "8",
+    "date": "2024-10-30T07:23:00",
+    "description": "Apartment lease"
+  },
+  {
+    "id": "252",
+    "amount": -269.48,
+    "category": "15",
+    "date": "2025-02-08T15:05:00",
+    "description": "Clothes"
+  },
+  {
+    "id": "253",
+    "amount": 498.03,
+    "category": "11",
+    "date": "2025-05-01T19:33:00",
+    "description": "Extra savings"
+  },
+  {
+    "id": "254",
+    "amount": 2447.5,
+    "category": "10",
+    "date": "2025-06-25T21:34:00",
+    "description": "Freelance project"
+  },
+  {
+    "id": "255",
+    "amount": 138.73,
+    "category": "11",
+    "date": "2024-11-12T20:30:00",
+    "description": "Savings deposit"
+  },
+  {
+    "id": "256",
+    "amount": -27.63,
+    "category": "12",
+    "date": "2025-05-07T22:51:00",
+    "description": "Train pass"
+  },
+  {
+    "id": "257",
+    "amount": -95.69,
+    "category": "1",
+    "date": "2024-11-12T21:39:00",
+    "description": "Textbooks"
+  },
+  {
+    "id": "258",
+    "amount": -20.71,
+    "category": "18",
+    "date": "2025-07-23T21:34:00",
+    "description": "Misc purchase"
+  },
+  {
+    "id": "259",
+    "amount": -653.17,
+    "category": "8",
+    "date": "2024-11-12T13:22:00",
+    "description": "Apartment lease"
+  },
+  {
+    "id": "260",
+    "amount": -53.59,
+    "category": "9",
+    "date": "2025-07-15T07:22:00",
+    "description": "Pizza night"
+  },
+  {
+    "id": "261",
+    "amount": -158.23,
+    "category": "14",
+    "date": "2025-02-02T22:19:00",
+    "description": "Flight"
+  },
+  {
+    "id": "262",
+    "amount": -35.04,
+    "category": "1",
+    "date": "2025-03-15T12:07:00",
+    "description": "Textbooks"
+  },
+  {
+    "id": "263",
+    "amount": -54.88,
+    "category": "18",
+    "date": "2025-02-03T18:17:00",
+    "description": "Misc purchase"
+  },
+  {
+    "id": "264",
+    "amount": -351.9,
+    "category": "14",
+    "date": "2024-10-13T19:19:00",
+    "description": "Flight"
+  },
+  {
+    "id": "265",
+    "amount": -154.39,
+    "category": "4",
+    "date": "2024-10-22T11:35:00",
+    "description": "Medication"
+  },
+  {
+    "id": "266",
+    "amount": -121.31,
+    "category": "5",
+    "date": "2025-01-03T13:03:00",
+    "description": "Health premium"
+  },
+  {
+    "id": "267",
+    "amount": -35.48,
+    "category": "15",
+    "date": "2025-05-01T15:06:00",
+    "description": "Clothes"
+  },
+  {
+    "id": "268",
+    "amount": -237.53,
+    "category": "5",
+    "date": "2024-12-01T06:48:00",
+    "description": "Life insurance"
+  },
+  {
+    "id": "269",
+    "amount": -29.59,
+    "category": "18",
+    "date": "2025-01-24T06:13:00",
+    "description": "Misc purchase"
+  },
+  {
+    "id": "270",
+    "amount": -39.78,
+    "category": "17",
+    "date": "2024-10-22T13:49:00",
+    "description": "Pet toys"
+  },
+  {
+    "id": "271",
+    "amount": -810.36,
+    "category": "8",
+    "date": "2024-12-23T12:48:00",
+    "description": "Monthly rent"
+  },
+  {
+    "id": "272",
+    "amount": 1384.3,
+    "category": "10",
+    "date": "2024-09-26T10:07:00",
+    "description": "Freelance project"
+  },
+  {
+    "id": "273",
+    "amount": -107.25,
+    "category": "13",
+    "date": "2025-03-13T19:57:00",
+    "description": "Electric bill"
+  },
+  {
+    "id": "274",
+    "amount": -65.31,
+    "category": "9",
+    "date": "2025-04-08T12:45:00",
+    "description": "Lunch caf\u00e9"
+  },
+  {
+    "id": "275",
+    "amount": -27.28,
+    "category": "7",
+    "date": "2025-05-26T17:21:00",
+    "description": "Gift"
+  },
+  {
+    "id": "276",
+    "amount": -53.82,
+    "category": "2",
+    "date": "2025-02-15T08:50:00",
+    "description": "Movie night"
+  },
+  {
+    "id": "277",
+    "amount": -36.16,
+    "category": "12",
+    "date": "2025-05-09T12:25:00",
+    "description": "Bus ticket"
+  },
+  {
+    "id": "278",
+    "amount": -73.39,
+    "category": "2",
+    "date": "2025-03-15T15:36:00",
+    "description": "Movie night"
+  },
+  {
+    "id": "279",
+    "amount": -27.61,
+    "category": "12",
+    "date": "2025-05-31T11:24:00",
+    "description": "Bus ticket"
+  },
+  {
+    "id": "280",
+    "amount": -252.4,
+    "category": "14",
+    "date": "2025-06-19T09:44:00",
+    "description": "Hotel"
+  },
+  {
+    "id": "281",
+    "amount": -93.08,
+    "category": "18",
+    "date": "2025-07-16T15:15:00",
+    "description": "Misc purchase"
+  },
+  {
+    "id": "282",
+    "amount": -27.25,
+    "category": "16",
+    "date": "2025-02-16T22:14:00",
+    "description": "Cloud storage"
+  },
+  {
+    "id": "283",
+    "amount": -20.39,
+    "category": "18",
+    "date": "2025-01-18T13:47:00",
+    "description": "Other expense"
+  },
+  {
+    "id": "284",
+    "amount": -6.45,
+    "category": "16",
+    "date": "2025-02-01T06:44:00",
+    "description": "Netflix"
+  },
+  {
+    "id": "285",
+    "amount": -174.53,
+    "category": "1",
+    "date": "2024-11-28T21:27:00",
+    "description": "Course enrollment"
+  },
+  {
+    "id": "286",
+    "amount": -28.41,
+    "category": "12",
+    "date": "2025-07-07T08:22:00",
+    "description": "Bus ticket"
+  },
+  {
+    "id": "287",
+    "amount": -29.71,
+    "category": "9",
+    "date": "2025-05-17T19:46:00",
+    "description": "Dinner out"
+  },
+  {
+    "id": "288",
+    "amount": -28.04,
+    "category": "16",
+    "date": "2024-12-29T15:11:00",
+    "description": "Netflix"
+  },
+  {
+    "id": "289",
+    "amount": -38.89,
+    "category": "17",
+    "date": "2025-05-30T11:30:00",
+    "description": "Vet visit"
+  },
+  {
+    "id": "290",
+    "amount": -59.53,
+    "category": "3",
+    "date": "2024-09-03T21:56:00",
+    "description": "Bakery"
+  },
+  {
+    "id": "291",
+    "amount": -151.0,
+    "category": "13",
+    "date": "2025-01-24T13:54:00",
+    "description": "Water fee"
+  },
+  {
+    "id": "292",
+    "amount": 1977.1,
+    "category": "10",
+    "date": "2025-06-29T20:12:00",
+    "description": "Freelance project"
+  },
+  {
+    "id": "293",
+    "amount": 970.48,
+    "category": "11",
+    "date": "2025-02-25T20:56:00",
+    "description": "Savings deposit"
+  },
+  {
+    "id": "294",
+    "amount": 1468.47,
+    "category": "10",
+    "date": "2025-03-30T21:27:00",
+    "description": "Freelance project"
+  },
+  {
+    "id": "295",
+    "amount": -138.67,
+    "category": "5",
+    "date": "2025-01-24T22:58:00",
+    "description": "Car insurance"
+  },
+  {
+    "id": "296",
+    "amount": -57.47,
+    "category": "3",
+    "date": "2025-02-17T11:29:00",
+    "description": "Supermarket"
+  },
+  {
+    "id": "297",
+    "amount": -16.54,
+    "category": "7",
+    "date": "2024-09-20T14:02:00",
+    "description": "Random expense"
+  },
+  {
+    "id": "298",
+    "amount": -18.53,
+    "category": "2",
+    "date": "2024-12-28T15:15:00",
+    "description": "Streaming subscription"
+  },
+  {
+    "id": "299",
+    "amount": -64.73,
+    "category": "17",
+    "date": "2025-02-20T13:35:00",
+    "description": "Vet visit"
+  },
+  {
+    "id": "300",
+    "amount": -37.13,
+    "category": "1",
+    "date": "2024-11-18T17:57:00",
+    "description": "Exam fee"
+  },
+  {
+    "id": "301",
+    "amount": -78.45,
+    "category": "13",
+    "date": "2025-03-02T07:14:00",
+    "description": "Electric bill"
+  },
+  {
+    "id": "302",
+    "amount": 1826.36,
+    "category": "6",
+    "date": "2025-07-26T22:29:00",
+    "description": "Stock dividends"
+  },
+  {
+    "id": "303",
+    "amount": -61.35,
+    "category": "3",
+    "date": "2024-10-05T09:04:00",
+    "description": "Weekly groceries"
+  },
+  {
+    "id": "304",
+    "amount": -29.95,
+    "category": "7",
+    "date": "2025-04-15T06:02:00",
+    "description": "Random expense"
+  },
+  {
+    "id": "305",
+    "amount": 637.1,
+    "category": "11",
+    "date": "2024-09-24T14:13:00",
+    "description": "Extra savings"
+  },
+  {
+    "id": "306",
+    "amount": -41.66,
+    "category": "18",
+    "date": "2024-12-19T06:37:00",
+    "description": "Other expense"
+  },
+  {
+    "id": "307",
+    "amount": 1935.88,
+    "category": "6",
+    "date": "2025-04-03T22:57:00",
+    "description": "Investment return"
+  },
+  {
+    "id": "308",
+    "amount": -135.14,
+    "category": "15",
+    "date": "2025-01-20T08:16:00",
+    "description": "Electronics"
+  },
+  {
+    "id": "309",
+    "amount": -21.46,
+    "category": "16",
+    "date": "2025-02-15T16:00:00",
+    "description": "Netflix"
+  },
+  {
+    "id": "310",
+    "amount": -196.5,
+    "category": "14",
+    "date": "2024-11-17T15:19:00",
+    "description": "Hotel"
+  },
+  {
+    "id": "311",
+    "amount": -62.43,
+    "category": "2",
+    "date": "2025-05-03T16:27:00",
+    "description": "Movie night"
+  },
+  {
+    "id": "312",
+    "amount": -44.57,
+    "category": "15",
+    "date": "2025-06-01T09:50:00",
+    "description": "Electronics"
+  },
+  {
+    "id": "313",
+    "amount": -106.73,
+    "category": "13",
+    "date": "2025-04-19T17:42:00",
+    "description": "Internet"
+  },
+  {
+    "id": "314",
+    "amount": -52.86,
+    "category": "3",
+    "date": "2025-06-01T22:53:00",
+    "description": "Weekly groceries"
+  },
+  {
+    "id": "315",
+    "amount": -39.98,
+    "category": "3",
+    "date": "2025-07-12T08:07:00",
+    "description": "Bakery"
+  },
+  {
+    "id": "316",
+    "amount": -367.86,
+    "category": "14",
+    "date": "2025-04-11T08:37:00",
+    "description": "Hotel"
+  },
+  {
+    "id": "317",
+    "amount": -292.39,
+    "category": "15",
+    "date": "2025-06-12T14:29:00",
+    "description": "Electronics"
+  },
+  {
+    "id": "318",
+    "amount": -303.39,
+    "category": "14",
+    "date": "2025-02-19T17:04:00",
+    "description": "Flight"
+  },
+  {
+    "id": "319",
+    "amount": -10.01,
+    "category": "7",
+    "date": "2025-02-20T16:16:00",
+    "description": "Random expense"
+  },
+  {
+    "id": "320",
+    "amount": 424.62,
+    "category": "11",
+    "date": "2025-01-30T20:00:00",
+    "description": "Savings deposit"
+  },
+  {
+    "id": "321",
+    "amount": 697.86,
+    "category": "11",
+    "date": "2025-06-19T15:51:00",
+    "description": "Extra savings"
+  },
+  {
+    "id": "322",
+    "amount": -87.07,
+    "category": "7",
+    "date": "2025-03-17T15:14:00",
+    "description": "Gift"
+  },
+  {
+    "id": "323",
+    "amount": -25.17,
+    "category": "16",
+    "date": "2025-06-27T14:38:00",
+    "description": "Cloud storage"
+  },
+  {
+    "id": "324",
+    "amount": -10.49,
+    "category": "16",
+    "date": "2024-12-04T09:55:00",
+    "description": "Cloud storage"
+  },
+  {
+    "id": "325",
+    "amount": -166.07,
+    "category": "5",
+    "date": "2024-11-09T11:28:00",
+    "description": "Health premium"
+  },
+  {
+    "id": "326",
+    "amount": -894.47,
+    "category": "8",
+    "date": "2024-12-11T15:11:00",
+    "description": "Apartment lease"
+  },
+  {
+    "id": "327",
+    "amount": -180.49,
+    "category": "5",
+    "date": "2025-04-06T12:46:00",
+    "description": "Health premium"
+  },
+  {
+    "id": "328",
+    "amount": -141.04,
+    "category": "1",
+    "date": "2025-05-09T10:00:00",
+    "description": "Textbooks"
+  },
+  {
+    "id": "329",
+    "amount": -24.65,
+    "category": "17",
+    "date": "2025-03-12T20:54:00",
+    "description": "Dog food"
+  },
+  {
+    "id": "330",
+    "amount": 901.96,
+    "category": "11",
+    "date": "2025-06-14T09:16:00",
+    "description": "Emergency fund"
+  },
+  {
+    "id": "331",
+    "amount": -34.13,
+    "category": "12",
+    "date": "2025-01-03T11:17:00",
+    "description": "Taxi ride"
+  },
+  {
+    "id": "332",
+    "amount": -186.59,
+    "category": "15",
+    "date": "2025-06-27T12:10:00",
+    "description": "Clothes"
+  },
+  {
+    "id": "333",
+    "amount": -808.8,
+    "category": "8",
+    "date": "2025-07-18T08:00:00",
+    "description": "Apartment lease"
+  },
+  {
+    "id": "334",
+    "amount": -60.55,
+    "category": "17",
+    "date": "2024-10-14T13:35:00",
+    "description": "Dog food"
+  },
+  {
+    "id": "335",
+    "amount": 995.39,
+    "category": "6",
+    "date": "2024-10-18T10:12:00",
+    "description": "Stock dividends"
+  },
+  {
+    "id": "336",
+    "amount": -271.1,
+    "category": "5",
+    "date": "2024-09-28T21:04:00",
+    "description": "Life insurance"
+  },
+  {
+    "id": "337",
+    "amount": -98.51,
+    "category": "1",
+    "date": "2025-07-22T20:16:00",
+    "description": "Textbooks"
+  },
+  {
+    "id": "338",
+    "amount": -144.52,
+    "category": "4",
+    "date": "2024-09-16T15:00:00",
+    "description": "Medication"
+  },
+  {
+    "id": "339",
+    "amount": -263.81,
+    "category": "14",
+    "date": "2024-12-16T22:35:00",
+    "description": "Train ticket"
+  },
+  {
+    "id": "340",
+    "amount": -39.35,
+    "category": "17",
+    "date": "2024-09-20T20:43:00",
+    "description": "Pet toys"
+  },
+  {
+    "id": "341",
+    "amount": -72.38,
+    "category": "2",
+    "date": "2024-11-28T13:34:00",
+    "description": "Streaming subscription"
+  },
+  {
+    "id": "342",
+    "amount": -10.28,
+    "category": "18",
+    "date": "2024-09-14T13:40:00",
+    "description": "Other expense"
+  },
+  {
+    "id": "343",
+    "amount": -26.97,
+    "category": "12",
+    "date": "2025-06-26T20:51:00",
+    "description": "Bus ticket"
+  },
+  {
+    "id": "344",
+    "amount": -74.05,
+    "category": "2",
+    "date": "2025-03-18T15:45:00",
+    "description": "Movie night"
+  },
+  {
+    "id": "345",
+    "amount": -60.69,
+    "category": "1",
+    "date": "2025-06-06T08:34:00",
+    "description": "Course enrollment"
+  },
+  {
+    "id": "346",
+    "amount": -199.03,
+    "category": "13",
+    "date": "2025-02-06T09:20:00",
+    "description": "Internet"
+  },
+  {
+    "id": "347",
+    "amount": 1764.63,
+    "category": "10",
+    "date": "2025-02-08T10:14:00",
+    "description": "Monthly salary"
+  },
+  {
+    "id": "348",
+    "amount": 687.12,
+    "category": "6",
+    "date": "2024-11-07T12:32:00",
+    "description": "Investment return"
+  },
+  {
+    "id": "349",
+    "amount": -633.73,
+    "category": "8",
+    "date": "2025-02-24T19:52:00",
+    "description": "Monthly rent"
+  },
+  {
+    "id": "350",
+    "amount": -285.55,
+    "category": "5",
+    "date": "2024-10-12T19:58:00",
+    "description": "Car insurance"
+  },
+  {
+    "id": "351",
+    "amount": -203.48,
+    "category": "15",
+    "date": "2025-06-04T17:45:00",
+    "description": "Clothes"
+  },
+  {
+    "id": "352",
+    "amount": 1421.0,
+    "category": "6",
+    "date": "2025-04-02T15:50:00",
+    "description": "Stock dividends"
+  },
+  {
+    "id": "353",
+    "amount": 1396.85,
+    "category": "6",
+    "date": "2025-04-09T06:09:00",
+    "description": "Investment return"
+  },
+  {
+    "id": "354",
+    "amount": -32.07,
+    "category": "17",
+    "date": "2025-06-09T19:40:00",
+    "description": "Dog food"
+  },
+  {
+    "id": "355",
+    "amount": -71.14,
+    "category": "17",
+    "date": "2025-03-02T14:07:00",
+    "description": "Pet toys"
+  },
+  {
+    "id": "356",
+    "amount": -119.47,
+    "category": "4",
+    "date": "2025-03-03T21:41:00",
+    "description": "Therapy"
+  },
+  {
+    "id": "357",
+    "amount": -77.65,
+    "category": "17",
+    "date": "2024-09-07T18:08:00",
+    "description": "Dog food"
+  },
+  {
+    "id": "358",
+    "amount": -195.87,
+    "category": "1",
+    "date": "2024-09-21T18:07:00",
+    "description": "Textbooks"
+  },
+  {
+    "id": "359",
+    "amount": 2099.59,
+    "category": "10",
+    "date": "2024-11-06T17:24:00",
+    "description": "Bonus payout"
+  },
+  {
+    "id": "360",
+    "amount": -109.76,
+    "category": "3",
+    "date": "2024-11-02T11:23:00",
+    "description": "Bakery"
+  },
+  {
+    "id": "361",
+    "amount": -25.63,
+    "category": "9",
+    "date": "2025-01-03T20:26:00",
+    "description": "Dinner out"
+  },
+  {
+    "id": "362",
+    "amount": -126.14,
+    "category": "13",
+    "date": "2024-09-11T08:40:00",
+    "description": "Water fee"
+  },
+  {
+    "id": "363",
+    "amount": -25.42,
+    "category": "17",
+    "date": "2025-03-28T22:47:00",
+    "description": "Vet visit"
+  },
+  {
+    "id": "364",
+    "amount": -181.03,
+    "category": "4",
+    "date": "2024-11-25T10:52:00",
+    "description": "Doctor visit"
+  },
+  {
+    "id": "365",
+    "amount": -77.52,
+    "category": "17",
+    "date": "2024-09-30T08:04:00",
+    "description": "Pet toys"
+  },
+  {
+    "id": "366",
+    "amount": -235.72,
+    "category": "15",
+    "date": "2025-02-24T16:10:00",
+    "description": "Electronics"
+  },
+  {
+    "id": "367",
+    "amount": 1690.82,
+    "category": "6",
+    "date": "2024-10-10T16:56:00",
+    "description": "Crypto gain"
+  },
+  {
+    "id": "368",
+    "amount": -231.43,
+    "category": "15",
+    "date": "2024-11-24T11:42:00",
+    "description": "Clothes"
+  },
+  {
+    "id": "369",
+    "amount": 1790.84,
+    "category": "10",
+    "date": "2025-05-24T12:06:00",
+    "description": "Bonus payout"
+  },
+  {
+    "id": "370",
+    "amount": -56.72,
+    "category": "17",
+    "date": "2024-11-25T13:12:00",
+    "description": "Pet toys"
+  },
+  {
+    "id": "371",
+    "amount": 2121.28,
+    "category": "10",
+    "date": "2024-10-29T10:51:00",
+    "description": "Monthly salary"
+  },
+  {
+    "id": "372",
+    "amount": -29.03,
+    "category": "16",
+    "date": "2025-05-26T07:10:00",
+    "description": "Cloud storage"
+  },
+  {
+    "id": "373",
+    "amount": 173.73,
+    "category": "11",
+    "date": "2025-03-02T09:14:00",
+    "description": "Extra savings"
+  },
+  {
+    "id": "374",
+    "amount": -50.65,
+    "category": "12",
+    "date": "2025-07-29T08:48:00",
+    "description": "Train pass"
+  },
+  {
+    "id": "375",
+    "amount": -139.77,
+    "category": "13",
+    "date": "2025-05-08T16:09:00",
+    "description": "Internet"
+  },
+  {
+    "id": "376",
+    "amount": -28.64,
+    "category": "16",
+    "date": "2025-04-15T13:43:00",
+    "description": "Cloud storage"
+  },
+  {
+    "id": "377",
+    "amount": -645.11,
+    "category": "8",
+    "date": "2025-04-25T19:44:00",
+    "description": "Apartment lease"
+  },
+  {
+    "id": "378",
+    "amount": -53.04,
+    "category": "17",
+    "date": "2024-11-21T09:36:00",
+    "description": "Dog food"
+  },
+  {
+    "id": "379",
+    "amount": -52.56,
+    "category": "12",
+    "date": "2025-02-25T12:34:00",
+    "description": "Train pass"
+  },
+  {
+    "id": "380",
+    "amount": -285.42,
+    "category": "14",
+    "date": "2025-06-22T10:48:00",
+    "description": "Hotel"
+  },
+  {
+    "id": "381",
+    "amount": -371.82,
+    "category": "14",
+    "date": "2024-09-04T10:47:00",
+    "description": "Train ticket"
+  },
+  {
+    "id": "382",
+    "amount": 110.09,
+    "category": "11",
+    "date": "2024-09-23T13:09:00",
+    "description": "Extra savings"
+  },
+  {
+    "id": "383",
+    "amount": -22.81,
+    "category": "16",
+    "date": "2025-02-02T08:46:00",
+    "description": "Spotify"
+  },
+  {
+    "id": "384",
+    "amount": -14.43,
+    "category": "7",
+    "date": "2024-11-03T09:14:00",
+    "description": "Donation"
+  },
+  {
+    "id": "385",
+    "amount": 1939.19,
+    "category": "6",
+    "date": "2024-11-12T20:06:00",
+    "description": "Crypto gain"
+  },
+  {
+    "id": "386",
+    "amount": -52.06,
+    "category": "2",
+    "date": "2024-11-24T20:11:00",
+    "description": "Game purchase"
+  },
+  {
+    "id": "387",
+    "amount": -24.03,
+    "category": "12",
+    "date": "2024-12-04T06:12:00",
+    "description": "Taxi ride"
+  },
+  {
+    "id": "388",
+    "amount": -15.67,
+    "category": "12",
+    "date": "2024-11-07T08:29:00",
+    "description": "Train pass"
+  },
+  {
+    "id": "389",
+    "amount": -113.28,
+    "category": "13",
+    "date": "2025-02-19T11:48:00",
+    "description": "Water fee"
+  },
+  {
+    "id": "390",
+    "amount": -193.58,
+    "category": "13",
+    "date": "2025-05-18T22:32:00",
+    "description": "Water fee"
+  },
+  {
+    "id": "391",
+    "amount": 872.71,
+    "category": "11",
+    "date": "2025-07-21T06:21:00",
+    "description": "Savings deposit"
+  },
+  {
+    "id": "392",
+    "amount": -114.43,
+    "category": "14",
+    "date": "2025-05-08T10:18:00",
+    "description": "Flight"
+  },
+  {
+    "id": "393",
+    "amount": -295.76,
+    "category": "15",
+    "date": "2024-12-01T10:05:00",
+    "description": "Clothes"
+  },
+  {
+    "id": "394",
+    "amount": -60.73,
+    "category": "9",
+    "date": "2025-06-19T08:28:00",
+    "description": "Pizza night"
+  },
+  {
+    "id": "395",
+    "amount": -34.12,
+    "category": "2",
+    "date": "2025-04-11T06:51:00",
+    "description": "Movie night"
+  },
+  {
+    "id": "396",
+    "amount": -5.17,
+    "category": "16",
+    "date": "2024-10-19T06:40:00",
+    "description": "Cloud storage"
+  },
+  {
+    "id": "397",
+    "amount": 1084.85,
+    "category": "6",
+    "date": "2025-02-25T17:06:00",
+    "description": "Crypto gain"
+  },
+  {
+    "id": "398",
+    "amount": -15.85,
+    "category": "7",
+    "date": "2025-03-02T07:22:00",
+    "description": "Donation"
+  },
+  {
+    "id": "399",
+    "amount": -88.82,
+    "category": "3",
+    "date": "2024-09-10T22:54:00",
+    "description": "Weekly groceries"
+  },
+  {
+    "id": "400",
+    "amount": -51.3,
+    "category": "17",
+    "date": "2024-12-14T10:27:00",
+    "description": "Pet toys"
+  },
+  {
+    "id": "401",
+    "amount": 999.62,
+    "category": "6",
+    "date": "2025-06-13T20:39:00",
+    "description": "Stock dividends"
+  },
+  {
+    "id": "402",
+    "amount": -484.5,
+    "category": "14",
+    "date": "2025-04-19T13:57:00",
+    "description": "Hotel"
+  },
+  {
+    "id": "403",
+    "amount": 722.34,
+    "category": "11",
+    "date": "2025-06-08T06:04:00",
+    "description": "Extra savings"
+  },
+  {
+    "id": "404",
+    "amount": -143.57,
+    "category": "3",
+    "date": "2024-12-17T07:43:00",
+    "description": "Weekly groceries"
+  },
+  {
+    "id": "405",
+    "amount": -22.64,
+    "category": "2",
+    "date": "2025-05-22T10:48:00",
+    "description": "Game purchase"
+  },
+  {
+    "id": "406",
+    "amount": 618.64,
+    "category": "11",
+    "date": "2024-09-23T18:42:00",
+    "description": "Emergency fund"
+  },
+  {
+    "id": "407",
+    "amount": -51.93,
+    "category": "3",
+    "date": "2025-06-09T15:26:00",
+    "description": "Supermarket"
+  },
+  {
+    "id": "408",
+    "amount": -166.66,
+    "category": "5",
+    "date": "2024-09-25T19:53:00",
+    "description": "Health premium"
+  },
+  {
+    "id": "409",
+    "amount": -13.83,
+    "category": "16",
+    "date": "2025-03-21T08:30:00",
+    "description": "Spotify"
+  },
+  {
+    "id": "410",
+    "amount": 1855.37,
+    "category": "6",
+    "date": "2025-02-07T12:53:00",
+    "description": "Investment return"
+  },
+  {
+    "id": "411",
+    "amount": -25.48,
+    "category": "9",
+    "date": "2025-01-04T13:21:00",
+    "description": "Dinner out"
+  },
+  {
+    "id": "412",
+    "amount": -498.56,
+    "category": "14",
+    "date": "2025-04-22T10:19:00",
+    "description": "Flight"
+  },
+  {
+    "id": "413",
+    "amount": -13.66,
+    "category": "2",
+    "date": "2025-07-11T13:01:00",
+    "description": "Streaming subscription"
+  },
+  {
+    "id": "414",
+    "amount": 1565.5,
+    "category": "6",
+    "date": "2024-12-23T13:48:00",
+    "description": "Investment return"
+  },
+  {
+    "id": "415",
+    "amount": -43.4,
+    "category": "18",
+    "date": "2024-11-24T07:37:00",
+    "description": "Misc purchase"
+  },
+  {
+    "id": "416",
+    "amount": -155.28,
+    "category": "5",
+    "date": "2024-09-05T06:25:00",
+    "description": "Health premium"
+  },
+  {
+    "id": "417",
+    "amount": -54.7,
+    "category": "12",
+    "date": "2025-01-18T07:36:00",
+    "description": "Taxi ride"
+  },
+  {
+    "id": "418",
+    "amount": -87.45,
+    "category": "9",
+    "date": "2024-11-18T20:22:00",
+    "description": "Pizza night"
+  },
+  {
+    "id": "419",
+    "amount": -51.82,
+    "category": "17",
+    "date": "2025-04-14T06:01:00",
+    "description": "Dog food"
+  },
+  {
+    "id": "420",
+    "amount": -96.16,
+    "category": "9",
+    "date": "2025-06-29T20:13:00",
+    "description": "Lunch caf\u00e9"
+  },
+  {
+    "id": "421",
+    "amount": -90.07,
+    "category": "9",
+    "date": "2025-02-04T12:48:00",
+    "description": "Dinner out"
+  },
+  {
+    "id": "422",
+    "amount": 1143.36,
+    "category": "6",
+    "date": "2025-04-06T22:13:00",
+    "description": "Investment return"
+  },
+  {
+    "id": "423",
+    "amount": -95.13,
+    "category": "7",
+    "date": "2025-01-13T21:54:00",
+    "description": "Random expense"
+  },
+  {
+    "id": "424",
+    "amount": -25.33,
+    "category": "16",
+    "date": "2024-09-11T18:17:00",
+    "description": "Spotify"
+  },
+  {
+    "id": "425",
+    "amount": -56.92,
+    "category": "2",
+    "date": "2025-01-21T07:51:00",
+    "description": "Streaming subscription"
+  },
+  {
+    "id": "426",
+    "amount": -47.65,
+    "category": "2",
+    "date": "2024-09-03T10:20:00",
+    "description": "Streaming subscription"
+  },
+  {
+    "id": "427",
+    "amount": -90.64,
+    "category": "1",
+    "date": "2025-05-03T22:36:00",
+    "description": "Exam fee"
+  },
+  {
+    "id": "428",
+    "amount": -688.11,
+    "category": "8",
+    "date": "2025-05-06T21:10:00",
+    "description": "Apartment lease"
+  },
+  {
+    "id": "429",
+    "amount": -239.03,
+    "category": "5",
+    "date": "2025-02-09T20:59:00",
+    "description": "Health premium"
+  },
+  {
+    "id": "430",
+    "amount": -17.06,
+    "category": "7",
+    "date": "2025-07-16T14:15:00",
+    "description": "Gift"
+  },
+  {
+    "id": "431",
+    "amount": -975.26,
+    "category": "8",
+    "date": "2025-01-19T17:14:00",
+    "description": "Apartment lease"
+  },
+  {
+    "id": "432",
+    "amount": -920.13,
+    "category": "8",
+    "date": "2024-10-10T08:04:00",
+    "description": "Apartment lease"
+  },
+  {
+    "id": "433",
+    "amount": -84.54,
+    "category": "18",
+    "date": "2025-07-14T17:53:00",
+    "description": "Misc purchase"
+  },
+  {
+    "id": "434",
+    "amount": -783.07,
+    "category": "8",
+    "date": "2024-11-03T15:34:00",
+    "description": "Apartment lease"
+  },
+  {
+    "id": "435",
+    "amount": 695.03,
+    "category": "11",
+    "date": "2025-05-14T12:57:00",
+    "description": "Extra savings"
+  },
+  {
+    "id": "436",
+    "amount": -139.88,
+    "category": "15",
+    "date": "2025-01-18T13:12:00",
+    "description": "Clothes"
+  },
+  {
+    "id": "437",
+    "amount": -30.96,
+    "category": "15",
+    "date": "2025-05-24T07:03:00",
+    "description": "Electronics"
+  },
+  {
+    "id": "438",
+    "amount": -76.72,
+    "category": "3",
+    "date": "2025-03-15T13:17:00",
+    "description": "Bakery"
+  },
+  {
+    "id": "439",
+    "amount": -167.43,
+    "category": "13",
+    "date": "2024-12-17T20:54:00",
+    "description": "Water fee"
+  },
+  {
+    "id": "440",
+    "amount": -71.16,
+    "category": "7",
+    "date": "2024-11-27T08:20:00",
+    "description": "Donation"
+  },
+  {
+    "id": "441",
+    "amount": -56.68,
+    "category": "15",
+    "date": "2025-02-07T21:23:00",
+    "description": "Online shopping"
+  },
+  {
+    "id": "442",
+    "amount": 1781.06,
+    "category": "10",
+    "date": "2025-01-29T17:55:00",
+    "description": "Monthly salary"
+  },
+  {
+    "id": "443",
+    "amount": -241.54,
+    "category": "5",
+    "date": "2025-06-22T08:14:00",
+    "description": "Car insurance"
+  },
+  {
+    "id": "444",
+    "amount": -103.56,
+    "category": "1",
+    "date": "2024-11-07T10:24:00",
+    "description": "Exam fee"
+  },
+  {
+    "id": "445",
+    "amount": 1346.17,
+    "category": "6",
+    "date": "2024-12-08T16:54:00",
+    "description": "Investment return"
+  },
+  {
+    "id": "446",
+    "amount": -18.7,
+    "category": "18",
+    "date": "2024-10-27T07:20:00",
+    "description": "Misc purchase"
+  },
+  {
+    "id": "447",
+    "amount": -69.04,
+    "category": "18",
+    "date": "2025-04-11T06:56:00",
+    "description": "Other expense"
+  },
+  {
+    "id": "448",
+    "amount": -424.39,
+    "category": "14",
+    "date": "2025-02-24T07:07:00",
+    "description": "Hotel"
+  },
+  {
+    "id": "449",
+    "amount": -133.72,
+    "category": "13",
+    "date": "2024-09-09T08:15:00",
+    "description": "Internet"
+  },
+  {
+    "id": "450",
+    "amount": -53.59,
+    "category": "3",
+    "date": "2024-11-30T19:51:00",
+    "description": "Supermarket"
+  },
+  {
+    "id": "451",
+    "amount": -87.84,
+    "category": "18",
+    "date": "2025-02-21T13:29:00",
+    "description": "Other expense"
+  },
+  {
+    "id": "452",
+    "amount": -135.58,
+    "category": "5",
+    "date": "2025-05-31T15:14:00",
+    "description": "Health premium"
+  },
+  {
+    "id": "453",
+    "amount": 2234.34,
+    "category": "10",
+    "date": "2024-12-08T19:53:00",
+    "description": "Freelance project"
+  },
+  {
+    "id": "454",
+    "amount": 1308.97,
+    "category": "6",
+    "date": "2024-11-12T14:46:00",
+    "description": "Investment return"
+  },
+  {
+    "id": "455",
+    "amount": -78.18,
+    "category": "15",
+    "date": "2024-09-12T16:01:00",
+    "description": "Clothes"
+  },
+  {
+    "id": "456",
+    "amount": -80.66,
+    "category": "9",
+    "date": "2024-11-25T07:05:00",
+    "description": "Lunch caf\u00e9"
+  },
+  {
+    "id": "457",
+    "amount": -73.91,
+    "category": "1",
+    "date": "2025-04-13T19:30:00",
+    "description": "Course enrollment"
+  },
+  {
+    "id": "458",
+    "amount": -37.17,
+    "category": "18",
+    "date": "2024-12-10T16:13:00",
+    "description": "Other expense"
+  },
+  {
+    "id": "459",
+    "amount": 595.58,
+    "category": "11",
+    "date": "2024-09-21T16:50:00",
+    "description": "Extra savings"
+  },
+  {
+    "id": "460",
+    "amount": -84.03,
+    "category": "18",
+    "date": "2024-12-05T08:20:00",
+    "description": "Other expense"
+  },
+  {
+    "id": "461",
+    "amount": -295.38,
+    "category": "5",
+    "date": "2025-02-21T12:15:00",
+    "description": "Life insurance"
+  },
+  {
+    "id": "462",
+    "amount": -278.02,
+    "category": "5",
+    "date": "2024-10-29T15:48:00",
+    "description": "Car insurance"
+  },
+  {
+    "id": "463",
+    "amount": -196.39,
+    "category": "13",
+    "date": "2024-10-04T22:49:00",
+    "description": "Electric bill"
+  },
+  {
+    "id": "464",
+    "amount": -92.42,
+    "category": "7",
+    "date": "2025-06-01T18:11:00",
+    "description": "Random expense"
+  },
+  {
+    "id": "465",
+    "amount": -15.0,
+    "category": "16",
+    "date": "2025-07-22T07:53:00",
+    "description": "Spotify"
+  },
+  {
+    "id": "466",
+    "amount": -104.34,
+    "category": "14",
+    "date": "2025-01-14T21:51:00",
+    "description": "Hotel"
+  },
+  {
+    "id": "467",
+    "amount": -78.25,
+    "category": "7",
+    "date": "2025-07-03T10:04:00",
+    "description": "Gift"
+  },
+  {
+    "id": "468",
+    "amount": -12.22,
+    "category": "12",
+    "date": "2024-10-07T12:15:00",
+    "description": "Taxi ride"
+  },
+  {
+    "id": "469",
+    "amount": 1879.56,
+    "category": "10",
+    "date": "2025-03-07T13:22:00",
+    "description": "Monthly salary"
+  },
+  {
+    "id": "470",
+    "amount": -98.26,
+    "category": "15",
+    "date": "2025-02-06T13:23:00",
+    "description": "Electronics"
+  },
+  {
+    "id": "471",
+    "amount": -72.32,
+    "category": "7",
+    "date": "2024-09-03T20:11:00",
+    "description": "Random expense"
+  },
+  {
+    "id": "472",
+    "amount": -63.35,
+    "category": "2",
+    "date": "2025-06-06T08:33:00",
+    "description": "Game purchase"
+  },
+  {
+    "id": "473",
+    "amount": -297.25,
+    "category": "5",
+    "date": "2025-05-11T17:34:00",
+    "description": "Life insurance"
+  },
+  {
+    "id": "474",
+    "amount": -42.2,
+    "category": "3",
+    "date": "2025-06-03T16:54:00",
+    "description": "Weekly groceries"
+  },
+  {
+    "id": "475",
+    "amount": 1196.82,
+    "category": "6",
+    "date": "2024-12-28T19:36:00",
+    "description": "Investment return"
+  },
+  {
+    "id": "476",
+    "amount": -76.78,
+    "category": "18",
+    "date": "2024-10-28T11:10:00",
+    "description": "Other expense"
+  },
+  {
+    "id": "477",
+    "amount": 1557.08,
+    "category": "6",
+    "date": "2025-04-11T18:33:00",
+    "description": "Crypto gain"
+  },
+  {
+    "id": "478",
+    "amount": 1665.96,
+    "category": "10",
+    "date": "2025-01-29T06:07:00",
+    "description": "Monthly salary"
+  },
+  {
+    "id": "479",
+    "amount": -53.25,
+    "category": "12",
+    "date": "2025-07-28T09:02:00",
+    "description": "Bus ticket"
+  },
+  {
+    "id": "480",
+    "amount": -124.4,
+    "category": "4",
+    "date": "2025-02-27T07:02:00",
+    "description": "Doctor visit"
+  },
+  {
+    "id": "481",
+    "amount": -858.01,
+    "category": "8",
+    "date": "2025-05-24T15:51:00",
+    "description": "Monthly rent"
+  },
+  {
+    "id": "482",
+    "amount": -28.55,
+    "category": "16",
+    "date": "2025-04-22T17:20:00",
+    "description": "Cloud storage"
+  },
+  {
+    "id": "483",
+    "amount": -30.85,
+    "category": "9",
+    "date": "2025-07-07T18:29:00",
+    "description": "Dinner out"
+  },
+  {
+    "id": "484",
+    "amount": -119.88,
+    "category": "3",
+    "date": "2025-03-01T16:01:00",
+    "description": "Supermarket"
+  },
+  {
+    "id": "485",
+    "amount": -214.66,
+    "category": "15",
+    "date": "2025-01-28T16:22:00",
+    "description": "Online shopping"
+  },
+  {
+    "id": "486",
+    "amount": -297.73,
+    "category": "5",
+    "date": "2025-05-06T09:58:00",
+    "description": "Car insurance"
+  },
+  {
+    "id": "487",
+    "amount": -13.63,
+    "category": "16",
+    "date": "2024-09-11T20:15:00",
+    "description": "Cloud storage"
+  },
+  {
+    "id": "488",
+    "amount": -863.11,
+    "category": "8",
+    "date": "2025-03-15T08:27:00",
+    "description": "Apartment lease"
+  },
+  {
+    "id": "489",
+    "amount": -469.24,
+    "category": "14",
+    "date": "2024-12-11T21:25:00",
+    "description": "Flight"
+  },
+  {
+    "id": "490",
+    "amount": -78.81,
+    "category": "13",
+    "date": "2025-04-05T15:53:00",
+    "description": "Water fee"
+  },
+  {
+    "id": "491",
+    "amount": -55.87,
+    "category": "12",
+    "date": "2024-09-02T10:58:00",
+    "description": "Taxi ride"
+  },
+  {
+    "id": "492",
+    "amount": -16.01,
+    "category": "16",
+    "date": "2024-11-29T19:43:00",
+    "description": "Cloud storage"
+  },
+  {
+    "id": "493",
+    "amount": -103.66,
+    "category": "15",
+    "date": "2025-05-08T14:40:00",
+    "description": "Online shopping"
+  },
+  {
+    "id": "494",
+    "amount": -78.97,
+    "category": "1",
+    "date": "2025-06-12T14:15:00",
+    "description": "Textbooks"
+  },
+  {
+    "id": "495",
+    "amount": -146.47,
+    "category": "5",
+    "date": "2025-04-17T19:28:00",
+    "description": "Health premium"
+  },
+  {
+    "id": "496",
+    "amount": -69.6,
+    "category": "17",
+    "date": "2024-10-05T09:10:00",
+    "description": "Pet toys"
+  },
+  {
+    "id": "497",
+    "amount": 1488.12,
+    "category": "10",
+    "date": "2024-10-15T12:48:00",
+    "description": "Monthly salary"
+  },
+  {
+    "id": "498",
+    "amount": -14.07,
+    "category": "12",
+    "date": "2024-10-01T17:35:00",
+    "description": "Bus ticket"
+  },
+  {
+    "id": "499",
+    "amount": -86.67,
+    "category": "9",
+    "date": "2025-06-10T17:27:00",
+    "description": "Lunch caf\u00e9"
+  },
+  {
+    "id": "500",
+    "amount": -44.02,
+    "category": "17",
+    "date": "2025-06-19T20:17:00",
+    "description": "Vet visit"
   }
 ]

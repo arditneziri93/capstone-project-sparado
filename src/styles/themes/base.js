@@ -21,15 +21,15 @@ const baseTheme = {
     neutral: {
       n0: "#FFFFFF",
       n50: "#FBFCFE",
-      n100: "#F0F4F8",
-      n200: "#DDE7EE",
-      n300: "#CDD7E1",
+      n100: "#E9EDF3", // before: #F0F4F8
+      n200: "#D8E1E9", // before: #DDE7EE
+      n300: "#C7D2DD", // before: #CDD7E1
       n400: "#B6C2CD",
       n500: "#9FA6AD",
       n600: "#636B74",
-      n700: "#32383E",
-      n800: "#1A1D1F",
-      n900: "#0B0D0E",
+      n700: "#363C42", // before: #32383E
+      n800: "#1D2023", // before: #1A1D1F
+      n900: "#0E1011", // before: #0B0D0E
       n1000: "#000000",
     },
     primary: {
@@ -66,6 +66,26 @@ const baseTheme = {
       dark: "#1E40AF",
       hover: "#1F56D8",
       on: "#FFFFFF",
+    },
+    categoryColors: {
+      category1: "#F23B2F", // Health
+      category2: "#EA2E66", // Shopping
+      category3: "#BB33D6", // Insurance
+      category4: "#885BFB", // Rent
+      category5: "#566CFC", // Utilities
+      category6: "#3897EF", // Education
+      category7: "#4FB6EE", // Travel
+      category8: "#60CFDF", // ?
+      category9: "#15C1B0", // Salary
+      category10: "#53C757", // Groceries
+      category11: "#95ED36", // Savings
+      category12: "#D2E430", // Subscriptions
+      category13: "#F1D70A", // Entertainment
+      category14: "#FFBE1C", // Pets
+      category15: "#FF930D", // Restaurants
+      category16: "#B66D11", // Transportation
+      category17: "#946555", // Miscellaneous
+      category18: "#71898E", // Other
     },
   },
   icons: {
