@@ -1,9 +1,9 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import styled, { useTheme } from "styled-components";
-import { IconVariant, IconSize, IconComponent } from "../icons";
-import { LL } from "../typography";
-import ConditionalLink from "../conditional_link";
+import { IconVariant, IconSize, IconComponent } from "../shared/icons";
+import { LL } from "../shared/typography";
+import ConditionalLink from "../shared/conditional_link";
 
 const Wrapper = styled.li`
   display: flex;
