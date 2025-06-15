@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { useTheme } from "styled-components";
 import { C, LL } from "@/src/components/shared/typography";
 import getColorBySign from "@/src/utils/get_color_by_sign";
 import { formatAmount } from "@/src/utils/format_amount";
@@ -29,23 +29,25 @@ const TableFooterItemWrapper = styled.div`
 `;
 
 export function TableFooter({ income, expenses, total }) {
+  const theme = useTheme();
+
   return (
     <TableFooterWrapper>
       <TableFooterItemWrapper>
         <C>Income:</C>
-        <LL $color={getColorBySign(income)} isMonospace>
+        <LL $color={getColorBySign(income, theme)} isMonospace>
           {formatAmount(income)} €
         </LL>
       </TableFooterItemWrapper>
       <TableFooterItemWrapper>
         <C>Expenses:</C>
-        <LL $color={getColorBySign(expenses)} isMonospace>
+        <LL $color={getColorBySign(expenses, theme)} isMonospace>
           {formatAmount(expenses)} €
         </LL>
       </TableFooterItemWrapper>
       <TableFooterItemWrapper>
         <C>Total:</C>
-        <LL $color={getColorBySign(total)} isMonospace>
+        <LL $color={getColorBySign(total, theme)} isMonospace>
           {formatAmount(total)} €
         </LL>
       </TableFooterItemWrapper>

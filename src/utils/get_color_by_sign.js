@@ -1,7 +1,4 @@
-import { useTheme } from "styled-components";
-
-export default function getColorBySign(value) {
-  const theme = useTheme();
+export default function getColorBySign(value, theme) {
   const parsedValue = parseFloat(value);
   console.log(parsedValue + " " + typeof parsedValue);
   if (isNaN(parsedValue)) return theme.text.neutral;

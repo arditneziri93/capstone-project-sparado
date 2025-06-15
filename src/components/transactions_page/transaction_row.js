@@ -101,7 +101,7 @@ export function TransactionRow({ transaction }) {
           <BS>{transaction.description}</BS>
         </TCellLeft>
         <TCellRight>
-          <LL $color={getColorBySign(transaction.amount)} isMonospace>
+          <LL $color={getColorBySign(transaction.amount, theme)} isMonospace>
             {transaction.amount.toFixed(2)}
           </LL>
         </TCellRight>
