@@ -21,15 +21,15 @@ const baseTheme = {
     neutral: {
       n0: "#FFFFFF",
       n50: "#FBFCFE",
-      n100: "#F0F4F8",
-      n200: "#DDE7EE",
-      n300: "#CDD7E1",
+      n100: "#E9EDF3", // before: #F0F4F8
+      n200: "#D8E1E9", // before: #DDE7EE
+      n300: "#C7D2DD", // before: #CDD7E1
       n400: "#B6C2CD",
       n500: "#9FA6AD",
       n600: "#636B74",
-      n700: "#32383E",
-      n800: "#1A1D1F",
-      n900: "#0B0D0E",
+      n700: "#363C42", // before: #32383E
+      n800: "#1D2023", // before: #1A1D1F
+      n900: "#0E1011", // before: #0B0D0E
       n1000: "#000000",
     },
     primary: {
