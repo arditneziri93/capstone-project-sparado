@@ -8,7 +8,7 @@ const TableFooterWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: ${({ theme }) => theme.size.xl2};
+  padding-top: ${({ theme }) => theme.size.xl};
   padding-bottom: ${({ theme }) => theme.size.xl2};
   background-color: ${({ theme }) => theme.surface.neutral};
   border-radius: ${({ theme }) => theme.size.m};
