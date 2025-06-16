@@ -16,7 +16,7 @@ const lightTheme = {
   },
   surface: {
     neutral: baseTheme.colors.neutral.n0,
-    neutralHover: baseTheme.colors.neutral.n100,
+    neutralHover: baseTheme.colors.neutral.n200,
     neutralAlt: baseTheme.colors.neutral.n100,
     neutralSpecial: baseTheme.colors.neutral.n200,
     accent: baseTheme.colors.primary.base,
@@ -40,8 +40,13 @@ const lightTheme = {
     color: {
       accent: baseTheme.colors.primary.base,
       neutral: baseTheme.colors.neutral.n700,
+      success: baseTheme.colors.success.base,
+      danger: baseTheme.colors.danger.base,
+      warning: baseTheme.colors.warning.base,
+      info: baseTheme.colors.info.base,
       disabled: baseTheme.colors.neutral.n500,
     },
+    size: baseTheme.size.xs,
   },
 };
 

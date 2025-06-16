@@ -1,19 +1,9 @@
-export const persistTheme = (value) => {
-  if (typeof window !== "undefined" && typeof value === "boolean") {
-    localStorage.setItem("darkMode", JSON.stringify(value));
-  }
-};
+import useLocalStorageState from "use-local-storage-state";
 
-export const loadTheme = () => {
-  if (typeof window !== "undefined") {
-    const stored = localStorage.getItem("darkMode");
+export function useTheme() {
+  const [isDarkMode, setDarkMode] = useLocalStorageState("darkMode", {
+    defaultValue: false,
+  });
 
-    try {
-      const parsed = JSON.parse(stored);
-      return typeof parsed === "boolean" ? parsed : false;
-    } catch {
-      return false;
-    }
-  }
-  return false;
-};
+  return [isDarkMode, setDarkMode];
+}
