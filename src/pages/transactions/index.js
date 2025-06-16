@@ -1,9 +1,12 @@
 import PageLayout from "@/src/components/layout/page_layout";
 import IconButton from "@/src/components/shared/icon_button";
 import { IconType } from "@/src/components/shared/icons";
-import { ArrowPaginator } from "@/src/components/shared/arrow_paginator";
+import {
+  Paginator,
+  PaginatorConfig,
+  PaginatorWidth,
+} from "@/src/components/shared/arrow_paginator";
 import SearchInput from "@/src/components/transactions_page/search_input/search_input";
-import styled from "styled-components";
 import { Button } from "@/src/components/shared/button";
 import { TransactionRow } from "@/src/components/transactions_page/transaction_row";
 import { TableTitles } from "@/src/components/transactions_page/table_titles";
@@ -11,6 +14,8 @@ import { useTransactionStore } from "@/src/stores/transactions_store";
 import { LM } from "@/src/components/shared/typography";
 import { TableFooter } from "@/src/components/transactions_page/table_footer";
 import { useTheme } from "styled-components";
+import { useMonthPagination } from "@/src/hooks/use_month_pagination";
+
 import {
   TableHeader,
   TableNavigationWrapper,
@@ -20,25 +25,26 @@ import {
   PlaceholderWrapper,
 } from "@/src/components/transactions_page/page_styled_components";
 
+import { useState } from "react";
+
 export default function TransactionsPage() {
-  const { groupedTransactions } = useTransactionStore();
+  const {
+    year,
+    month,
+    date,
+    goToCurrentMonth,
+    goToPreviousMonth,
+    goToNextMonth,
+    goToPreviousYear,
+    goToNextYear,
+  } = useMonthPagination();
+
+  const { getFilteredTransactions } = useTransactionStore();
+  const [search, setSearch] = useState("");
+  const groupedTransactions = getFilteredTransactions(date);
+  const filteredTransactions = getFilteredTransactions(date, search);
+
   const theme = useTheme();
-
-  function goToCurrentMonth() {
-    alert("Current Month");
-  }
-
-  function goToPreviousMonth() {
-    alert("Previous Month");
-  }
-
-  function goToNextMonth() {
-    alert("Next Month");
-  }
-
-  function goToNextYear() {
-    alert("Next Year");
-  }
 
   function getSums() {
     let income = 0;
@@ -74,27 +80,32 @@ export default function TransactionsPage() {
       <TableHeader>
         <TableNavigationWrapper>
           <IconButton icon={IconType.CALENDAR} onClick={goToCurrentMonth} />
-          <ArrowPaginator
-            label="2025"
-            onClickLeft={goToPreviousMonth}
+          <Paginator
+            label={year}
+            onClickLeft={goToPreviousYear}
             onClickRight={goToNextYear}
+            config={PaginatorConfig(
+              IconType.LEFT,
+              IconType.RIGHT,
+              PaginatorWidth.YEAR
+            )}
           />
-          <ArrowPaginator
-            label="January"
+          <Paginator
+            label={month}
             onClickLeft={goToPreviousMonth}
             onClickRight={goToNextMonth}
           />
-          <SearchInput />
+          <SearchInput onChange={(val) => setSearch(val)} />
           <Button label="NEW" />
         </TableNavigationWrapper>
         <TableTitles />
       </TableHeader>
 
       <TableContentWrapper>
-        {groupedTransactions.length === 0 ? (
+        {filteredTransactions.length === 0 ? (
           <PlaceholderWrapper>No transactions available</PlaceholderWrapper>
         ) : (
-          groupedTransactions.map(({ date, transactions }) => (
+          filteredTransactions.map(({ date, transactions }) => (
             <TransactionsGroupWrapper key={date}>
               <TransactionGroupDateRow>
                 <LM $color={theme.text.disabled}>{formattedDate(date)}</LM>
