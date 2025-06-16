@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { useTheme } from "styled-components";
-import { IconComponent, IconType, IconSize } from "../icons";
+import { IconComponent, IconType, IconSize } from "../shared/icons";
 import { hexToRgba } from "@/src/utils/hex_to_rgba";
 
 const SwitchLabel = styled.label`

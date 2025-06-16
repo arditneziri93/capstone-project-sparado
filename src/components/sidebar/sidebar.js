@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import ConditionalLink from "../conditional_link";
+import ConditionalLink from "../shared/conditional_link";
 import SidebarItem from "./_sidebar_item";
-import { IconType } from "../icons";
+import { IconType } from "../shared/icons";
 import ThemeSwitch from "./_theme_switch";
 import { useThemeStore } from "@/src/stores/theme_store";
 
