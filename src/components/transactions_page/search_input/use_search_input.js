@@ -1,22 +1,26 @@
 import { useState } from "react";
 
-export function useSearchInput(initialValue = "", onChangeCallback) {
+export function useSearchInput(initialValue, onChangeExternal) {
   const [value, setValue] = useState(initialValue);
 
-  const handleChange = (e) => {
+  function handleChange(e) {
     const val = e.target.value;
     setValue(val);
-    if (typeof onChangeCallback === "function") {
-      onChangeCallback(val);
+    if (typeof onChangeExternal === "function") {
+      onChangeExternal(val);
     }
-  };
+  }
 
-  const clear = () => {
+  function clear() {
     setValue("");
-    if (typeof onChangeCallback === "function") {
-      onChangeCallback("");
+    if (typeof onChangeExternal === "function") {
+      onChangeExternal("");
     }
-  };
+  }
 
-  return { value, handleChange, clear };
+  return {
+    value,
+    handleChange,
+    clear,
+  };
 }
