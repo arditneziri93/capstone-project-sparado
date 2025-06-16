@@ -18,10 +18,27 @@ export function useTransactionStore() {
       .sort((a, b) => new Date(b.date) - new Date(a.date));
   }, [transactions, categories]);
 
-  const groupedTransactions = useMemo(() => {
+  function getFilteredTransactions(date, search = "") {
+    const month = date.getMonth();
+    const year = date.getFullYear();
+
+    const filtered = enrichedTransactions.filter((tx) => {
+      const txDate = new Date(tx.date);
+      const matchesDate =
+        txDate.getMonth() === month && txDate.getFullYear() === year;
+
+      const matchesSearch =
+        search.trim() === "" ||
+        tx.description?.toLowerCase().includes(search.toLowerCase()) ||
+        tx.category?.name?.toLowerCase().includes(search.toLowerCase()) ||
+        tx.amount?.toString().includes(search.toLowerCase());
+
+      return matchesDate && matchesSearch;
+    });
+
     const grouped = {};
 
-    enrichedTransactions.forEach((tx) => {
+    filtered.forEach((tx) => {
       const dateKey = new Date(tx.date).toISOString().split("T")[0];
       if (!grouped[dateKey]) {
         grouped[dateKey] = [];
@@ -35,11 +52,11 @@ export function useTransactionStore() {
         date,
         transactions,
       }));
-  }, [enrichedTransactions]);
+  }
 
   return {
     transactions: enrichedTransactions,
-    groupedTransactions,
+    getFilteredTransactions,
     setTransactions,
   };
 }

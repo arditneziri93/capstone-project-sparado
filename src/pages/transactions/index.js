@@ -1,9 +1,12 @@
 import PageLayout from "@/src/components/layout/page_layout";
 import IconButton from "@/src/components/shared/icon_button";
 import { IconType } from "@/src/components/shared/icons";
-import { ArrowPaginator } from "@/src/components/shared/arrow_paginator";
+import {
+  Paginator,
+  PaginatorConfig,
+  PaginatorWidth,
+} from "@/src/components/shared/arrow_paginator";
 import SearchInput from "@/src/components/transactions_page/search_input/search_input";
-import styled from "styled-components";
 import { Button } from "@/src/components/shared/button";
 import { TransactionRow } from "@/src/components/transactions_page/transaction_row";
 import { TableTitles } from "@/src/components/transactions_page/table_titles";
@@ -11,86 +14,37 @@ import { useTransactionStore } from "@/src/stores/transactions_store";
 import { LM } from "@/src/components/shared/typography";
 import { TableFooter } from "@/src/components/transactions_page/table_footer";
 import { useTheme } from "styled-components";
+import { useMonthPagination } from "@/src/hooks/use_month_pagination";
+
+import {
+  TableHeader,
+  TableNavigationWrapper,
+  TableContentWrapper,
+  TransactionsGroupWrapper,
+  TransactionGroupDateRow,
+  PlaceholderWrapper,
+} from "@/src/components/transactions_page/page_styled_components";
+
+import { useState } from "react";
 
 export default function TransactionsPage() {
-  const { groupedTransactions } = useTransactionStore();
+  const {
+    year,
+    month,
+    date,
+    goToCurrentMonth,
+    goToPreviousMonth,
+    goToNextMonth,
+    goToPreviousYear,
+    goToNextYear,
+  } = useMonthPagination();
+
+  const { getFilteredTransactions } = useTransactionStore();
+  const [search, setSearch] = useState("");
+  const groupedTransactions = getFilteredTransactions(date);
+  const filteredTransactions = getFilteredTransactions(date, search);
+
   const theme = useTheme();
-
-  const TableHeader = styled.div`
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: ${({ theme }) => theme.surface.neutral};
-    border-radius: ${({ theme }) => theme.size.m};
-    overflow: hidden;
-    position: sticky;
-    top: -75px;
-    z-index: 10;
-    box-shadow: 5px 0px 20px ${({ theme }) => theme.surface.neutralAlt};
-  `;
-
-  const TableNavigationWrapper = styled.div`
-    width: 100%;
-    display: flex;
-    justify-content: stretch;
-    padding: ${({ theme }) => theme.size.m + " " + theme.size.l};
-    gap: ${({ theme }) => theme.size.l};
-    align-items: center;
-  `;
-
-  const TableContentWrapper = styled.div`
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: ${({ theme }) => theme.size.m + " " + theme.size.none};
-  `;
-
-  const TransactionsGroupWrapper = styled.div`
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-    padding: ${({ theme }) => theme.size.m + " " + theme.size.none};
-    gap: ${({ theme }) => theme.size.s};
-  `;
-
-  const TransactionGroupDateRow = styled.div`
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: ${({ theme }) => theme.size.m + " " + theme.size.l};
-  `;
-
-  const PlaceholderWrapper = styled.div`
-    width: 100%;
-    padding: ${({ theme }) => theme.size.xl2};
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: ${({ theme }) => theme.size.xl3};
-  `;
-
-  function goToCurrentMonth() {
-    alert("Current Month");
-  }
-
-  function goToPreviousMonth() {
-    alert("Previous Month");
-  }
-
-  function goToNextMonth() {
-    alert("Next Month");
-  }
-
-  function goToNextYear() {
-    alert("Next Year");
-  }
 
   function getSums() {
     let income = 0;
@@ -126,27 +80,32 @@ export default function TransactionsPage() {
       <TableHeader>
         <TableNavigationWrapper>
           <IconButton icon={IconType.CALENDAR} onClick={goToCurrentMonth} />
-          <ArrowPaginator
-            label="2025"
-            onClickLeft={goToPreviousMonth}
+          <Paginator
+            label={year}
+            onClickLeft={goToPreviousYear}
             onClickRight={goToNextYear}
+            config={PaginatorConfig(
+              IconType.LEFT,
+              IconType.RIGHT,
+              PaginatorWidth.YEAR
+            )}
           />
-          <ArrowPaginator
-            label="January"
+          <Paginator
+            label={month}
             onClickLeft={goToPreviousMonth}
             onClickRight={goToNextMonth}
           />
-          <SearchInput />
+          <SearchInput onChange={(val) => setSearch(val)} />
           <Button label="NEW" />
         </TableNavigationWrapper>
         <TableTitles />
       </TableHeader>
 
       <TableContentWrapper>
-        {groupedTransactions.length === 0 ? (
+        {filteredTransactions.length === 0 ? (
           <PlaceholderWrapper>No transactions available</PlaceholderWrapper>
         ) : (
-          groupedTransactions.map(({ date, transactions }) => (
+          filteredTransactions.map(({ date, transactions }) => (
             <TransactionsGroupWrapper key={date}>
               <TransactionGroupDateRow>
                 <LM $color={theme.text.disabled}>{formattedDate(date)}</LM>

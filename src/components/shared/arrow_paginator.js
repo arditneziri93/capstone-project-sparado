@@ -3,27 +3,42 @@ import { IconType } from "./icons";
 import { LM } from "./typography";
 import styled from "styled-components";
 
-const ArrowPaginatorConfig = (
+export const PaginatorWidth = {
+  MONTH: "85px",
+  YEAR: "50px",
+};
+
+export const PaginatorConfig = (
   iconLeft = IconType.LEFT,
-  iconRight = IconType.RIGHT
+  iconRight = IconType.RIGHT,
+  labelWidth = PaginatorWidth.MONTH
 ) => {
   return {
     iconLeft,
     iconRight,
+    labelWidth,
   };
 };
 
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
-  gap: ${({ theme }) => theme.size.l};
+  gap: ${({ theme }) => theme.size.m};
 `;
 
-export function ArrowPaginator({
+const Label = styled(LM)`
+  width: ${({ $width }) => $width};
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  white-space: nowrap;
+`;
+
+export function Paginator({
   onClickLeft,
   onClickRight,
   label = "Paginator",
-  config = ArrowPaginatorConfig(),
+  config = PaginatorConfig(),
 }) {
   const isLeftDisabled = !onClickLeft;
   const isRightDisabled = !onClickRight;
@@ -35,7 +50,7 @@ export function ArrowPaginator({
         onClick={onClickLeft}
         isDisabled={isLeftDisabled}
       />
-      <LM>{label}</LM>
+      <Label $width={config.labelWidth}>{label}</Label>
       <IconButton
         icon={config.iconRight}
         onClick={onClickRight}
