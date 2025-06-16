@@ -20,7 +20,7 @@ const TableNavigationWrapper = styled.div`
   display: flex;
   justify-content: stretch;
   padding: ${({ theme }) => theme.size.m + " " + theme.size.l};
-  gap: ${({ theme }) => theme.size.l};
+  gap: ${({ theme }) => theme.size.m};
   align-items: center;
 `;
 
