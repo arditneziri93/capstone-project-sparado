@@ -3,7 +3,11 @@ import DeleteTransactionModal from "./delete_transaction_modal";
 import Modals from ".";
 
 const ModalDefList = () => [
-  <ModalDef id={Modals.DELETETRANSACTION} component={DeleteTransactionModal} />,
+  <ModalDef
+    key={Modals.DELETETRANSACTION}
+    id={Modals.DELETETRANSACTION}
+    component={DeleteTransactionModal}
+  />,
 ];
 
 export default ModalDefList;
