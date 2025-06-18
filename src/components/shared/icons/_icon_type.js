@@ -13,6 +13,11 @@ import {
   Calendar2,
   SearchNormal1,
   CloseCircle,
+  Add,
+  Minus,
+  Refresh,
+  ArrowUp2,
+  ArrowDown2,
 } from "iconsax-reactjs";
 import { Close } from "./custom_icons";
 
@@ -29,7 +34,12 @@ export const IconType = {
   CALENDAR: (props) => <Calendar2 {...props} />,
   LEFT: (props) => <ArrowLeft2 {...props} />,
   RIGHT: (props) => <ArrowRight2 {...props} />,
+  UP: (props) => <ArrowUp2 {...props} />,
+  DOWN: (props) => <ArrowDown2 {...props} />,
   SEARCH: (props) => <SearchNormal1 {...props} />,
   CLEAR: (props) => <CloseCircle {...props} />,
   CLOSE: (props) => <Close {...props} />,
+  PLUS: (props) => <Add {...props} />,
+  MINUS: (props) => <Minus {...props} />,
+  SWAP: (props) => <Refresh {...props} />,
 };
