@@ -15,7 +15,6 @@ import { LM } from "@/src/components/shared/typography";
 import { TableFooter } from "@/src/components/transactions_page/table_footer";
 import { useTheme } from "styled-components";
 import { useMonthPagination } from "@/src/hooks/use_month_pagination";
-
 import {
   TableHeader,
   TableNavigationWrapper,
@@ -26,6 +25,9 @@ import {
 } from "@/src/components/transactions_page/page_styled_components";
 
 import { useState } from "react";
+import { show } from "@oktapod/modal";
+import Modals from "@/src/components/modals";
+import { dayAndMonth, weekday } from "@/src/utils/formate_date_time";
 
 export default function TransactionsPage() {
   const {
@@ -39,7 +41,7 @@ export default function TransactionsPage() {
     goToNextYear,
   } = useMonthPagination();
 
-  const { getFilteredTransactions } = useTransactionStore();
+  const { getFilteredTransactions, deleteTransaction } = useTransactionStore();
   const [search, setSearch] = useState("");
   const groupedTransactions = getFilteredTransactions(date);
   const filteredTransactions = getFilteredTransactions(date, search);
@@ -61,19 +63,12 @@ export default function TransactionsPage() {
     return { income, expenses };
   }
 
+  function handleDelete(id) {
+    show(Modals.DELETETRANSACTION, { id, deleteTransaction });
+  }
+
   const { income, expenses } = getSums();
   const total = income + expenses;
-
-  function weekday(dateStr) {
-    return new Date(dateStr).toLocaleDateString("en-EN", { weekday: "long" });
-  }
-
-  function formattedDate(dateStr) {
-    const date = new Date(dateStr);
-    const day = date.toLocaleDateString("en-EN", { day: "2-digit" });
-    const month = date.toLocaleDateString("en-EN", { month: "long" });
-    return `${day}. ${month}`;
-  }
 
   return (
     <PageLayout title="Transactions">
@@ -108,11 +103,20 @@ export default function TransactionsPage() {
           filteredTransactions.map(({ date, transactions }) => (
             <TransactionsGroupWrapper key={date}>
               <TransactionGroupDateRow>
-                <LM $color={theme.text.disabled}>{formattedDate(date)}</LM>
+                <LM $color={theme.text.disabled}>{dayAndMonth(date)}</LM>
                 <LM $color={theme.text.disabled}>{weekday(date)}</LM>
               </TransactionGroupDateRow>
               {transactions.map((tx) => (
-                <TransactionRow key={tx.id} transaction={tx} />
+                <TransactionRow
+                  key={tx.id}
+                  transaction={tx}
+                  onDelete={(value) => {
+                    handleDelete(value);
+                  }}
+                  onEdit={(value) => {
+                    alert(value);
+                  }}
+                />
               ))}
             </TransactionsGroupWrapper>
           ))
