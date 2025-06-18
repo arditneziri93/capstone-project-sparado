@@ -3,7 +3,8 @@ import { useCategoryStore } from "@/src/stores/categories_store";
 import { useMemo } from "react";
 
 export function useTransactionStore() {
-  const [transactions, setTransactions] = useTransactions();
+  const [transactions, setTransactions, deleteTransactionService] =
+    useTransactions();
   const { categories } = useCategoryStore();
 
   const enrichedTransactions = useMemo(() => {
@@ -54,9 +55,14 @@ export function useTransactionStore() {
       }));
   }
 
+  async function deleteTransaction(id) {
+    return await deleteTransactionService(id);
+  }
+
   return {
     transactions: enrichedTransactions,
     getFilteredTransactions,
     setTransactions,
+    deleteTransaction,
   };
 }
