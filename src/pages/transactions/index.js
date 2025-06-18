@@ -41,7 +41,13 @@ export default function TransactionsPage() {
     goToNextYear,
   } = useMonthPagination();
 
-  const { getFilteredTransactions, deleteTransaction } = useTransactionStore();
+  const {
+    getFilteredTransactions,
+    addTransaction,
+    updateTransaction,
+    deleteTransaction,
+    categories,
+  } = useTransactionStore();
   const [search, setSearch] = useState("");
   const groupedTransactions = getFilteredTransactions(date);
   const filteredTransactions = getFilteredTransactions(date, search);
@@ -61,6 +67,14 @@ export default function TransactionsPage() {
       });
     });
     return { income, expenses };
+  }
+
+  function handleCreate() {
+    show(Modals.ADDTRANSACTION, { isNew: true, addTransaction, categories });
+  }
+
+  function handleUpdate(id) {
+    show(Modals.UPDATETRANSACTION, { id, isNew: true, updateTransaction });
   }
 
   function handleDelete(id) {
@@ -91,7 +105,7 @@ export default function TransactionsPage() {
             onClickRight={goToNextMonth}
           />
           <SearchInput onChange={(val) => setSearch(val)} />
-          <Button label="NEW" />
+          <Button label="NEW" onClick={handleCreate} />
         </TableNavigationWrapper>
         <TableTitles />
       </TableHeader>

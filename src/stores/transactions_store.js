@@ -64,5 +64,6 @@ export function useTransactionStore() {
     getFilteredTransactions,
     setTransactions,
     deleteTransaction,
+    categories,
   };
 }
