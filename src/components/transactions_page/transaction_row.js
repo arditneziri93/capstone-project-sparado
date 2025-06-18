@@ -12,6 +12,7 @@ import {
 import { LabelChip, LabelChipType } from "../shared/label_chip";
 import { useThemeStore } from "@/src/stores/theme_store";
 import getColorBySign from "@/src/utils/get_color_by_sign";
+import { lighten } from "polished";
 
 const ActionsWrapper = styled.div`
   opacity: 0;
@@ -25,6 +26,8 @@ const TransactionRowWrapper = styled.div`
   background-color: ${({ theme }) => theme.surface.neutral};
   align-items: center;
   padding: ${({ theme }) => theme.size.m + " " + theme.size.l};
+  border: ${({ theme }) =>
+    theme.border.size + " solid " + theme.border.neutral};
 
   &:hover {
     border: ${({ theme }) =>
@@ -56,7 +59,7 @@ const DateDetails = styled.div`
   flex-direction: column;
 `;
 
-export function TransactionRow({ transaction }) {
+export function TransactionRow({ transaction, onEdit, onDelete }) {
   const theme = useTheme();
   const { isDarkMode } = useThemeStore();
 
@@ -107,8 +110,16 @@ export function TransactionRow({ transaction }) {
         </TCellRight>
         <TCellCenter>
           <ActionsWrapper>
-            <IconButton icon={IconType.EDIT} isCompact />
-            <IconButton icon={IconType.DELETE} isCompact />
+            <IconButton
+              icon={IconType.EDIT}
+              onClick={() => onEdit(transaction.id)}
+              isCompact
+            />
+            <IconButton
+              icon={IconType.DELETE}
+              onClick={() => onDelete(transaction.id)}
+              isCompact
+            />
           </ActionsWrapper>
         </TCellCenter>
       </TableRowTemplate>

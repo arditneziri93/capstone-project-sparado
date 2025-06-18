@@ -14,6 +14,7 @@ import {
   SearchNormal1,
   CloseCircle,
 } from "iconsax-reactjs";
+import { Close } from "./custom_icons";
 
 export const IconType = {
   HOME: (props) => <Home2 {...props} />,
@@ -30,4 +31,5 @@ export const IconType = {
   RIGHT: (props) => <ArrowRight2 {...props} />,
   SEARCH: (props) => <SearchNormal1 {...props} />,
   CLEAR: (props) => <CloseCircle {...props} />,
+  CLOSE: (props) => <Close {...props} />,
 };

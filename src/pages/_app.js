@@ -4,17 +4,20 @@ import dark from "@/src/styles/themes/dark";
 import AppLayout from "@/src/components/layout/app_layout";
 import { ThemeProvider } from "styled-components";
 import { useThemeStore } from "@/src/stores/theme_store";
-import { useEffect } from "react";
+import { ModalProvider } from "@oktapod/modal";
+import ModalDefList from "../components/modals/modal_daf_list";
 
 export default function App({ Component, pageProps }) {
   const { isDarkMode } = useThemeStore();
-
   return (
     <ThemeProvider theme={isDarkMode ? dark : light}>
-      <AppLayout>
-        <GlobalStyle />
-        <Component {...pageProps} />
-      </AppLayout>
+      <ModalProvider>
+        <ModalDefList />
+        <AppLayout>
+          <GlobalStyle />
+          <Component {...pageProps} />
+        </AppLayout>
+      </ModalProvider>
     </ThemeProvider>
   );
 }

@@ -1,5 +1,5 @@
 import { Button } from "@/src/components/shared/button";
-import CategoryItem from "@/src/components/categoriies_page/category_item";
+import CategoryItem from "@/src/components/categories_page/category_item";
 import PageLayout from "@/src/components/layout/page_layout";
 import styled from "styled-components";
 import { useCategoryStore } from "@/src/stores/categories_store";
