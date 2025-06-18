@@ -18,7 +18,5 @@ export default function ModalAction({
   intent = ModalActionIntent.POSITIVE,
   onClick,
 }) {
-  return (
-    <Button label={label} onClick={onClick} variant={intent} type={type} />
-  );
+  return <Button label={label} onClick={onClick} state={intent} type={type} />;
 }

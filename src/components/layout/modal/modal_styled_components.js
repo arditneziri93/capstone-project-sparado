@@ -16,7 +16,7 @@ export const Overlay = styled.div`
 `;
 
 export const ModalWrapper = styled.div`
-  width: 350px;
+  width: ${({ isLarge }) => (isLarge ? "500px" : "350px")};
   padding: ${({ theme }) => theme.size.xl2};
   background: ${({ theme }) => theme.surface.neutral};
   border-radius: ${({ theme }) => theme.size.l};
