@@ -28,6 +28,7 @@ import { useState } from "react";
 import { show } from "@oktapod/modal";
 import Modals from "@/src/components/modals";
 import { dayAndMonth, weekday } from "@/src/utils/formate_date_time";
+import { TransactionFormMode } from "@/src/components/modals/add_transaction_modal";
 
 export default function TransactionsPage() {
   const {
@@ -70,7 +71,13 @@ export default function TransactionsPage() {
   }
 
   function handleCreate() {
-    show(Modals.ADDTRANSACTION, { isNew: true, addTransaction, categories });
+    show(Modals.ADDTRANSACTION, {
+      mode: TransactionFormMode.CREATE,
+      onSubmit: async (transaction) => {
+        return await addTransaction(transaction);
+      },
+      categories,
+    });
   }
 
   function handleUpdate(id) {
