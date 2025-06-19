@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import styled from "styled-components";
 import { InputWrapper } from "@/src/components/shared/input/input_base_style";
 import {
@@ -72,22 +72,12 @@ const IconWrapper = styled.div`
 
 const CategoryInput = ({ value, onChange, categories }) => {
   const [open, setOpen] = useState(false);
-  const [internalValue, setInternalValue] = useState(value || null);
-  const wrapperRef = useRef(null);
-
-  useEffect(() => {
-    if (value !== undefined) {
-      setInternalValue(value);
-    }
-  }, [value]);
+  const selected = categories.find((c) => c.id === value);
 
   const handleSelect = (id) => {
-    setInternalValue(id);
     onChange?.(id);
     setOpen(false);
   };
-
-  const selected = categories.find((c) => c.id === internalValue);
 
   const trailingIcon = (
     <IconWrapper>
@@ -100,7 +90,7 @@ const CategoryInput = ({ value, onChange, categories }) => {
   );
 
   return (
-    <Wrapper ref={wrapperRef}>
+    <Wrapper>
       <InputWrapper onClick={() => setOpen((o) => !o)}>
         <SelectedCategory>
           <CategoryLabel>

@@ -29,22 +29,23 @@ const IconWrapper = styled.div`
   justify-content: center;
 `;
 
-export default function AmountInput({
-  initialValue = 0,
-  initialSign = AmountSign.POSITIVE,
-  onChange,
-}) {
+export default function AmountInput({ initialValue = 0, onChange }) {
+  const parsed = parseFloat(initialValue);
+  const initialSign = parsed < 0 ? AmountSign.NEGATIVE : AmountSign.POSITIVE;
+  const initialAmount = Math.abs(parsed).toFixed(2);
+
   const [sign, setSign] = useState(initialSign);
-  const [amount, setAmount] = useState(initialValue.toString());
+  const [amount, setAmount] = useState(initialAmount);
 
   useEffect(() => {
-    const numeric = parseFloat(amount);
-    if (!isNaN(numeric)) {
-      onChange?.({ amount: numeric * sign.factor, sign });
-    } else {
-      onChange?.({ amount: 0, sign });
-    }
+    emitChange();
   }, [sign, amount]);
+
+  const emitChange = () => {
+    const numeric = parseFloat(amount);
+    const finalAmount = !isNaN(numeric) ? numeric * sign.factor : 0;
+    onChange?.({ amount: finalAmount, sign });
+  };
 
   const toggleSign = () => {
     setSign((prev) =>
@@ -55,11 +56,8 @@ export default function AmountInput({
   const handleChange = (e) => {
     const input = e.target.value;
 
-    if (input.includes("-")) {
-      setSign(AmountSign.NEGATIVE);
-    } else if (input.includes("+")) {
-      setSign(AmountSign.POSITIVE);
-    }
+    if (input.includes("-")) setSign(AmountSign.NEGATIVE);
+    if (input.includes("+")) setSign(AmountSign.POSITIVE);
 
     let raw = input.replace(/[-+]/g, "").replace(",", ".");
     raw = raw.replace(/[^0-9.]/g, "");
@@ -71,13 +69,13 @@ export default function AmountInput({
     setAmount(cleaned);
   };
 
-  const leadingIcon = () => (
+  const leadingIcon = (
     <IconWrapper>
       <IconComponent color={sign.color} icon={sign.icon} size={IconSize.M} />
     </IconWrapper>
   );
 
-  const trailingIcon = () => (
+  const trailingIcon = (
     <IconWrapper onClick={toggleSign}>
       <IconComponent icon={IconType.SWAP} size={IconSize.S} />
     </IconWrapper>
