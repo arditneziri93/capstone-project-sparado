@@ -80,8 +80,15 @@ export default function TransactionsPage() {
     });
   }
 
-  function handleUpdate(id) {
-    show(Modals.UPDATETRANSACTION, { id, isNew: true, updateTransaction });
+  function handleUpdate(transaction) {
+    show(Modals.ADDTRANSACTION, {
+      mode: TransactionFormMode.EDIT,
+      initialValues: transaction,
+      onSubmit: async (transaction) => {
+        return await updateTransaction(transaction);
+      },
+      categories,
+    });
   }
 
   function handleDelete(id) {
@@ -135,7 +142,7 @@ export default function TransactionsPage() {
                     handleDelete(value);
                   }}
                   onEdit={(value) => {
-                    alert(value);
+                    handleUpdate(tx);
                   }}
                 />
               ))}

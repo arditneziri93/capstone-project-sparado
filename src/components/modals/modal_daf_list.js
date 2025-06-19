@@ -14,6 +14,11 @@ const ModalDefList = () => [
     id={Modals.ADDTRANSACTION}
     component={AddTransactionModal}
   />,
+  <ModalDef
+    key={Modals.UPDATETRANSACTION}
+    id={Modals.UPDATETRANSACTION}
+    component={AddTransactionModal}
+  />,
 ];
 
 export default ModalDefList;

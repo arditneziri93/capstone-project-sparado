@@ -14,11 +14,24 @@ export function useTransactions() {
         added = true;
         return [...prev, transaction];
       }
-
       return prev;
     });
-
     return added;
+  }
+
+  async function updateTransactionService(transaction) {
+    let wasUpdated = false;
+    setTransactions((prev) => {
+      const updated = prev.map((t) => {
+        if (t.id === transaction.id) {
+          wasUpdated = true;
+          return transaction;
+        }
+        return t;
+      });
+      return updated;
+    });
+    return wasUpdated;
   }
 
   async function deleteTransaction(id) {
@@ -28,7 +41,6 @@ export function useTransactions() {
       wasDeleted = updated.length !== prev.length;
       return updated;
     });
-
     return wasDeleted;
   }
 
@@ -36,6 +48,7 @@ export function useTransactions() {
     transactions,
     setTransactions,
     addTransactionService,
+    updateTransactionService,
     deleteTransaction,
   ];
 }

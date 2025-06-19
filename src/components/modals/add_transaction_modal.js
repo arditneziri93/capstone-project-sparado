@@ -21,11 +21,13 @@ import { ErrorMessage } from "../layout/modal/form/error_message";
 
 export const TransactionFormMode = {
   CREATE: {
+    key: "CREATE",
     title: "Add Transaction",
     description: "Fill out the form to add a new transaction.",
     submitLabel: "Submit",
   },
   EDIT: {
+    key: "EDIT",
     title: "Edit Transaction",
     description: "Update the details of this transaction.",
     submitLabel: "Update",
@@ -42,25 +44,21 @@ const formSchema = z.object({
   }),
 });
 
-function resolveTransaction(data, modeKey, initialValues) {
-  const dateTime = `${data.date}T${data.time}`;
-  return {
-    id: modeKey === "EDIT" ? initialValues?.id : String(Date.now()),
-    amount: data.amount,
-    category: data.category,
-    date: dateTime,
-    description: data.description,
-  };
-}
-
-export default function TransactionModal({ mode, initialValues }) {
+export default function TransactionModal() {
   const modal = useModal();
-  const modeKey = mode || "CREATE";
-  const modeConfig = TransactionFormMode[modeKey];
+  const { mode, initialValues, onSubmit, categories } = modal.args || {};
   const [state, setState] = useState(ModalState.DEFAULT);
-  const isNew = modeKey === "CREATE";
 
-  const { onSubmit, categories } = modal.args || {};
+  const isNew = mode?.key === TransactionFormMode.CREATE.key;
+  const title = isNew
+    ? TransactionFormMode.CREATE.title
+    : TransactionFormMode.EDIT.title;
+  const description = isNew
+    ? TransactionFormMode.CREATE.description
+    : TransactionFormMode.EDIT.description;
+  const submitLabel = isNew
+    ? TransactionFormMode.CREATE.submitLabel
+    : TransactionFormMode.EDIT.submitLabel;
 
   const {
     watch,
@@ -71,12 +69,14 @@ export default function TransactionModal({ mode, initialValues }) {
   } = useForm({
     resolver: zodResolver(formSchema),
     mode: "onTouched",
-    defaultValues: initialValues || {
-      description: "",
-      date: new Date().toISOString().split("T")[0],
-      time: "12:00",
-      category: "",
-      amount: 0,
+    defaultValues: {
+      description: initialValues?.description ?? "",
+      date:
+        initialValues?.date?.split("T")[0] ??
+        new Date().toISOString().split("T")[0],
+      time: initialValues?.date?.split("T")[1]?.substring(0, 5) ?? "12:00",
+      category: initialValues?.category.id ?? "",
+      amount: initialValues?.amount ?? 0,
     },
   });
 
@@ -84,10 +84,14 @@ export default function TransactionModal({ mode, initialValues }) {
     const valid = await trigger();
     if (!valid) return;
     const formData = getValues();
-    const transaction = resolveTransaction(formData, modeKey, initialValues);
-    console.log(transaction);
+    const transaction = {
+      id: isNew ? String(Date.now()) : initialValues?.id,
+      amount: formData.amount,
+      category: formData.category,
+      date: `${formData.date}T${formData.time}`,
+      description: formData.description,
+    };
     const success = await onSubmit?.(transaction);
-    console.log("SUCCESS: ", success);
     setState(success ? ModalState.SUCCESS : ModalState.ERROR);
   };
 
@@ -97,8 +101,8 @@ export default function TransactionModal({ mode, initialValues }) {
       modal={modal}
       isLarge={state === ModalState.DEFAULT}
       modalConfigs={{
-        title: modeConfig.title,
-        description: modeConfig.description,
+        title,
+        description,
         actions: [
           <ModalAction
             key="cancel"
@@ -109,7 +113,7 @@ export default function TransactionModal({ mode, initialValues }) {
           />,
           <ModalAction
             key="submit"
-            label={modeConfig.submitLabel}
+            label={submitLabel}
             type={ModalActionType.PRIMARY}
             intent={ModalActionIntent.POSITIVE}
             onClick={handleSubmit}

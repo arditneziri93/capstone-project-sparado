@@ -7,6 +7,7 @@ export function useTransactionStore() {
     transactions,
     setTransactions,
     addTransactionService,
+    updateTransactionService,
     deleteTransactionService,
   ] = useTransactions();
   const { categories } = useCategoryStore();
@@ -63,6 +64,10 @@ export function useTransactionStore() {
     return await addTransactionService(transaction);
   }
 
+  async function updateTransaction(transaction) {
+    return await updateTransactionService(transaction);
+  }
+
   async function deleteTransaction(id) {
     return await deleteTransactionService(id);
   }
@@ -72,6 +77,7 @@ export function useTransactionStore() {
     getFilteredTransactions,
     setTransactions,
     addTransaction,
+    updateTransaction,
     deleteTransaction,
     categories,
   };
