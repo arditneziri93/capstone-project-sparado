@@ -57,7 +57,7 @@ export default function TextInput({
   const [isFocused, setIsFocused] = useState(false);
 
   const renderRightIcon = () => {
-    if (iconRight) return iconRight(value ? onClear : null);
+    if (iconRight) return iconRight;
 
     if (isClearable) {
       const disabled = !value?.length;
@@ -80,7 +80,8 @@ export default function TextInput({
 
   return (
     <InputWrapper onClick={() => inputRef.current?.focus()}>
-      {iconLeft && iconLeft(isFocused)}
+      {iconLeft &&
+        (typeof iconLeft === "function" ? iconLeft(isFocused) : iconLeft)}
       <StyledTextInput
         ref={inputRef}
         $align={align}
