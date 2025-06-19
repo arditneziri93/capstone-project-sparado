@@ -8,8 +8,18 @@ import {
 } from "@/src/components/shared/icons";
 
 export const AmountSign = {
-  POSITIVE: { key: "POSITIVE", color: "#52c41a", icon: IconType.PLUS },
-  NEGATIVE: { key: "NEGATIVE", color: "#ff4d4f", icon: IconType.MINUS },
+  POSITIVE: {
+    key: "POSITIVE",
+    color: "#52c41a",
+    icon: IconType.PLUS,
+    factor: 1,
+  },
+  NEGATIVE: {
+    key: "NEGATIVE",
+    color: "#ff4d4f",
+    icon: IconType.MINUS,
+    factor: -1,
+  },
 };
 
 const IconWrapper = styled.div`
@@ -25,10 +35,15 @@ export default function AmountInput({
   onChange,
 }) {
   const [sign, setSign] = useState(initialSign);
-  const [amount, setAmount] = useState(initialValue);
+  const [amount, setAmount] = useState(initialValue.toString());
 
   useEffect(() => {
-    onChange?.({ sign, amount });
+    const numeric = parseFloat(amount);
+    if (!isNaN(numeric)) {
+      onChange?.({ amount: numeric * sign.factor, sign });
+    } else {
+      onChange?.({ amount: 0, sign });
+    }
   }, [sign, amount]);
 
   const toggleSign = () => {
@@ -38,7 +53,15 @@ export default function AmountInput({
   };
 
   const handleChange = (e) => {
-    let raw = e.target.value.replace(/^[-+]/, "").replace(",", ".");
+    const input = e.target.value;
+
+    if (input.includes("-")) {
+      setSign(AmountSign.NEGATIVE);
+    } else if (input.includes("+")) {
+      setSign(AmountSign.POSITIVE);
+    }
+
+    let raw = input.replace(/[-+]/g, "").replace(",", ".");
     raw = raw.replace(/[^0-9.]/g, "");
 
     const parts = raw.split(".");
