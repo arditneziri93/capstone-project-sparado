@@ -61,7 +61,7 @@ export default function ModalLayout({
           <IconButton icon={IconType.CLOSE} onClick={modal.remove} />
         </TopRow>
         <BB>{description}</BB>
-        {children}
+        {body}
         <ButtonRow>{actions}</ButtonRow>
       </ModalWrapper>
     </Overlay>
