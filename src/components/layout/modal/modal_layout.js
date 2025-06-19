@@ -19,6 +19,7 @@ export default function ModalLayout({
   children,
   modalConfigs = {},
   dismissOnClickOutside = true,
+  isLarge = false,
 }) {
   const resolvedState = state ?? ModalState.DEFAULT;
 
@@ -54,7 +55,7 @@ export default function ModalLayout({
 
   return (
     <Overlay onClick={handleClick}>
-      <ModalWrapper onClick={(e) => e.stopPropagation()}>
+      <ModalWrapper isLarge={isLarge} onClick={(e) => e.stopPropagation()}>
         <TopRow>
           <H3>{title}</H3>
           <IconButton icon={IconType.CLOSE} onClick={modal.remove} />

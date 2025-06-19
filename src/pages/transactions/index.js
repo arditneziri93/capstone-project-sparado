@@ -28,6 +28,7 @@ import { useState } from "react";
 import { show } from "@oktapod/modal";
 import Modals from "@/src/components/modals";
 import { dayAndMonth, weekday } from "@/src/utils/formate_date_time";
+import { TransactionFormMode } from "@/src/components/modals/add_transaction_modal";
 
 export default function TransactionsPage() {
   const {
@@ -41,7 +42,13 @@ export default function TransactionsPage() {
     goToNextYear,
   } = useMonthPagination();
 
-  const { getFilteredTransactions, deleteTransaction } = useTransactionStore();
+  const {
+    getFilteredTransactions,
+    addTransaction,
+    updateTransaction,
+    deleteTransaction,
+    categories,
+  } = useTransactionStore();
   const [search, setSearch] = useState("");
   const groupedTransactions = getFilteredTransactions(date);
   const filteredTransactions = getFilteredTransactions(date, search);
@@ -61,6 +68,27 @@ export default function TransactionsPage() {
       });
     });
     return { income, expenses };
+  }
+
+  function handleCreate() {
+    show(Modals.ADDTRANSACTION, {
+      mode: TransactionFormMode.CREATE,
+      onSubmit: async (transaction) => {
+        return await addTransaction(transaction);
+      },
+      categories,
+    });
+  }
+
+  function handleUpdate(transaction) {
+    show(Modals.ADDTRANSACTION, {
+      mode: TransactionFormMode.EDIT,
+      initialValues: transaction,
+      onSubmit: async (transaction) => {
+        return await updateTransaction(transaction);
+      },
+      categories,
+    });
   }
 
   function handleDelete(id) {
@@ -91,7 +119,7 @@ export default function TransactionsPage() {
             onClickRight={goToNextMonth}
           />
           <SearchInput onChange={(val) => setSearch(val)} />
-          <Button label="NEW" />
+          <Button label="NEW" onClick={handleCreate} />
         </TableNavigationWrapper>
         <TableTitles />
       </TableHeader>
@@ -114,7 +142,7 @@ export default function TransactionsPage() {
                     handleDelete(value);
                   }}
                   onEdit={(value) => {
-                    alert(value);
+                    handleUpdate(tx);
                   }}
                 />
               ))}
