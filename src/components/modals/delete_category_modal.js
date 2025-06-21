@@ -7,16 +7,16 @@ import ModalAction, {
 import { ModalState } from "@/src/components/layout/modal/modal_state";
 import { useState } from "react";
 
-export default function DeleteTransactionModal() {
+export default function DeleteCategoryModal() {
   const modal = useModal();
   const [state, setState] = useState(ModalState.DEFAULT);
 
   if (!modal.visible) return null;
 
-  const { id, deleteTransaction } = modal.args || {};
+  const { id, deleteCategory } = modal.args || {};
 
   async function handleDelete() {
-    const isSuccessful = await deleteTransaction(id);
+    const isSuccessful = await deleteCategory(id);
     if (isSuccessful) {
       setState(ModalState.SUCCESS);
     } else {
@@ -29,8 +29,8 @@ export default function DeleteTransactionModal() {
       state={state}
       modal={modal}
       modalConfigs={{
-        title: "Delete transaction",
-        description: "Are you sure you want to delete this transaction?",
+        title: "Delete category",
+        description: "Are you sure you want to delete this category?",
         actions: [
           <ModalAction
             key="cancel"

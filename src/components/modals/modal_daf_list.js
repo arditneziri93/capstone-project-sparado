@@ -2,6 +2,7 @@ import { ModalDef } from "@oktapod/modal";
 import Modals from ".";
 import DeleteTransactionModal from "./delete_transaction_modal";
 import AddTransactionModal from "./add_transaction_modal";
+import DeleteCategoryModal from "./delete_category_modal";
 
 const ModalDefList = () => [
   <ModalDef
@@ -18,6 +19,11 @@ const ModalDefList = () => [
     key={Modals.UPDATETRANSACTION}
     id={Modals.UPDATETRANSACTION}
     component={AddTransactionModal}
+  />,
+  <ModalDef
+    key={Modals.DELETECATEGORY}
+    id={Modals.DELETECATEGORY}
+    component={DeleteCategoryModal}
   />,
 ];
 

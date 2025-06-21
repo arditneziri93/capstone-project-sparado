@@ -4,6 +4,8 @@ import PageLayout from "@/src/components/layout/page_layout";
 import styled from "styled-components";
 import { useCategoryStore } from "@/src/stores/categories_store";
 import { BB } from "@/src/components/shared/typography";
+import { show } from "@/packages/modal/src";
+import Modals from "@/src/components/modals";
 
 const CategoryList = styled.div`
   display: grid;
@@ -24,7 +26,12 @@ const ButtonWrapper = styled.div`
 `;
 
 export default function HomePage() {
-  const { categories } = useCategoryStore();
+  const { categories, deleteCategory } = useCategoryStore();
+
+  function handleDelete(id) {
+    show(Modals.DELETECATEGORY, { id, deleteCategory });
+  }
+
   return (
     <PageLayout title="Categories">
       <CategoryList>
@@ -39,7 +46,9 @@ export default function HomePage() {
               key={cat.id}
               color={cat.color}
               onEdit={() => {}}
-              onDelete={() => {}}
+              onDelete={() => {
+                handleDelete(cat.id);
+              }}
             />
           ))
         )}

@@ -6,5 +6,15 @@ export function useCategories() {
     defaultValue: defaultCategories,
   });
 
-  return [categories, setCategories];
+  async function deleteCategoryService(id) {
+    let wasDeleted = false;
+    setCategories((prev) => {
+      const updated = prev.filter((c) => c.id !== id);
+      wasDeleted = updated.length !== prev.length;
+      return updated;
+    });
+    return wasDeleted;
+  }
+
+  return [categories, setCategories, deleteCategoryService];
 }
