@@ -4,7 +4,7 @@ import PageLayout from "@/src/components/layout/page_layout";
 import styled from "styled-components";
 import { useCategoryStore } from "@/src/stores/categories_store";
 import { BB } from "@/src/components/shared/typography";
-import { show } from "@/packages/modal/src";
+import { show } from "@oktapod/modal";
 import Modals from "@/src/components/modals";
 
 const CategoryList = styled.div`
@@ -25,8 +25,26 @@ const ButtonWrapper = styled.div`
   justify-content: center;
 `;
 
-export default function HomePage() {
-  const { categories, deleteCategory } = useCategoryStore();
+export default function CategoriesPage() {
+  const { categories, addCategory, updateCategory, deleteCategory } =
+    useCategoryStore();
+
+  function handleCreate() {
+    show(Modals.ADDCATEGORY, {
+      onSubmit: async (category) => {
+        return await addCategory(category);
+      },
+    });
+  }
+
+  function handleUpdate(category) {
+    show(Modals.UPDATECATEGORY, {
+      initialValues: category,
+      onSubmit: async (category) => {
+        return await updateCategory(category);
+      },
+    });
+  }
 
   function handleDelete(id) {
     show(Modals.DELETECATEGORY, { id, deleteCategory });
@@ -42,19 +60,17 @@ export default function HomePage() {
         ) : (
           categories.map((cat) => (
             <CategoryItem
-              label={cat.name}
               key={cat.id}
+              label={cat.name}
               color={cat.color}
-              onEdit={() => {}}
-              onDelete={() => {
-                handleDelete(cat.id);
-              }}
+              onEdit={() => handleUpdate(cat)}
+              onDelete={() => handleDelete(cat.id)}
             />
           ))
         )}
       </CategoryList>
       <ButtonWrapper>
-        <Button label="Add Category" onClick={() => alert("Add Category")} />
+        <Button label="Add Category" onClick={handleCreate} />
       </ButtonWrapper>
     </PageLayout>
   );
