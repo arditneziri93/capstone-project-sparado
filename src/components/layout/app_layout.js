@@ -1,10 +1,24 @@
 import styled from "styled-components";
-import Sidebar from "@/src/components/sidebar/sidebar.js";
+import Sidebar from "@/src/components/sidebar/sidebar";
+import TopBar from "@/src/components/mobile_navigation/top_bar";
+import BottomBar from "@/src/components/mobile_navigation/bottom_bar";
 
 const Wrapper = styled.div`
   display: flex;
+  flex-direction: column;
   height: 100vh;
-  background-color: ${({ theme }) => theme.surface.neutralAlt};
+`;
+
+const Main = styled.div`
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+`;
+
+const SidebarWrapper = styled.div`
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const ContentArea = styled.main`
@@ -16,8 +30,14 @@ const ContentArea = styled.main`
 export default function AppLayout({ children }) {
   return (
     <Wrapper>
-      <Sidebar />
-      <ContentArea>{children}</ContentArea>
+      <TopBar />
+      <Main>
+        <SidebarWrapper>
+          <Sidebar />
+        </SidebarWrapper>
+        <ContentArea>{children}</ContentArea>
+      </Main>
+      <BottomBar />
     </Wrapper>
   );
 }
