@@ -34,19 +34,25 @@ export const TransactionFormMode = {
   },
 };
 
-const formSchema = z.object({
-  description: z.string().min(1, "Description is required"),
-  date: z.string().min(1, "Date is required"),
-  time: z.string().min(1, "Time is required"),
-  category: z.string().min(1, "Category is required"),
-  amount: z.coerce.number().refine((val) => val !== 0, {
-    message: "Amount cannot be zero",
-  }),
-});
+const createFormSchema = ({ id }) =>
+  z.object({
+    description: z.string().min(1, "Description is required"),
+    date: z.string().min(1, "Date is required"),
+    time: z.string().min(1, "Time is required"),
+    category: z
+      .string()
+      .min(1, "Category is required")
+      .refine((val) => categories.some((c) => c.id === val), {
+        message: "Category does not exist",
+      }),
+    amount: z.coerce.number().refine((val) => val !== 0, {
+      message: "Amount cannot be zero",
+    }),
+  });
 
 export default function TransactionModal() {
   const modal = useModal();
-  const { mode, initialValues, onSubmit, categories } = modal.args || {};
+  const { mode, initialValues, onSubmit, categories = [] } = modal.args || {};
   const [state, setState] = useState(ModalState.DEFAULT);
 
   const isNew = mode?.key === TransactionFormMode.CREATE.key;
@@ -67,7 +73,7 @@ export default function TransactionModal() {
     trigger,
     formState: { errors },
   } = useForm({
-    resolver: zodResolver(formSchema),
+    resolver: zodResolver(createFormSchema(categories)),
     mode: "onTouched",
     defaultValues: {
       description: initialValues?.description ?? "",
@@ -75,7 +81,7 @@ export default function TransactionModal() {
         initialValues?.date?.split("T")[0] ??
         new Date().toISOString().split("T")[0],
       time: initialValues?.date?.split("T")[1]?.substring(0, 5) ?? "12:00",
-      category: initialValues?.category.id ?? "",
+      category: initialValues?.category?.id ?? "",
       amount: initialValues?.amount ?? 0,
     },
   });
@@ -154,7 +160,7 @@ export default function TransactionModal() {
           <CategoryInput
             value={watch("category")}
             onChange={(id) => setValue("category", id)}
-            categories={categories || []}
+            categories={categories}
           />
           {errors.category && (
             <ErrorMessage message={errors.category.message} />
