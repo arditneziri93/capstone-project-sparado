@@ -6,15 +6,49 @@ export function useCategories() {
     defaultValue: defaultCategories,
   });
 
-  async function deleteCategoryService(id) {
-    let wasDeleted = false;
+  async function addCategoryService(category) {
+    let added = false;
     setCategories((prev) => {
-      const updated = prev.filter((c) => c.id !== id);
-      wasDeleted = updated.length !== prev.length;
-      return updated;
+      const exists = prev.some((c) => c.id === category.id);
+      if (!exists) {
+        added = true;
+        return [...prev, category];
+      }
+      return prev;
     });
-    return wasDeleted;
+    return added;
   }
 
-  return [categories, setCategories, deleteCategoryService];
+  async function updateCategoryService(category) {
+    let updated = false;
+    setCategories((prev) => {
+      const result = prev.map((c) => {
+        if (c.id === category.id) {
+          updated = true;
+          return category;
+        }
+        return c;
+      });
+      return result;
+    });
+    return updated;
+  }
+
+  async function deleteCategoryService(id) {
+    let deleted = false;
+    setCategories((prev) => {
+      const updated = prev.filter((c) => c.id !== id);
+      deleted = updated.length !== prev.length;
+      return updated;
+    });
+    return deleted;
+  }
+
+  return [
+    categories,
+    setCategories,
+    addCategoryService,
+    updateCategoryService,
+    deleteCategoryService,
+  ];
 }
